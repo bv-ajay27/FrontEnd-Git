@@ -93,7 +93,7 @@ h2{
     position: relative;
 }
 .skills-container:hover{
-    color: palevioletred;
+    color: rgb(247, 238, 241);
     scroll-behavior: auto;
     cursor: pointer;
 }
@@ -136,18 +136,19 @@ h2{
 .reachMe{
     margin: auto;
     left: 300px;
-    background-color: rgb(245, 241, 237);
+    background-color: rgb(10, 10, 9);
     box-sizing: border-box;
     border: 2px;
     border-radius: 5px;
     align-items: center;
-    padding-left: 45%;
+    padding-left: 44%;
 }
 .icons{
+    align-items: center;
     flex-direction: column;
 }
 .reachMe:hover{
     cursor: pointer;
-    background-color: rgba(225, 226, 233, 0);
-    padding:5px;
+    background-color: rgb(2, 5, 20);
+    padding:2px;
 }
