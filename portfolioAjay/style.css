@@ -3,7 +3,8 @@
     box-sizing: border-box;
 }
 body{
-    background-image:url(images/backg.jpg),url(images/magnitute.jpg);
+/*     background-image:url(images/backg.jpg),url(images/magnitute.jpg); */
+    background-color: black;
     background-repeat:no-repeat;
     padding: 10px;
     background-position: center;
@@ -148,7 +149,5 @@ h2{
 .reachMe:hover{
     cursor: pointer;
     background-color: rgba(225, 226, 233, 0);
+    padding:5px;
 }
-
-
-
