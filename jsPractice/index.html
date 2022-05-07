@@ -8,9 +8,19 @@
 </head>
 <body>
     <h1 id="sample">hello javaScript</h1>
-    <button type="button">clickHere</button>
+
+    <radio class="test"><input type="text"></radio>
+
+    <button type="button" class="className">submit </button>
     <script>
         document.getElementById("sample").innerHTML = "this is new one";
+        let x = document.getElementsByClassName(test).innerHTML;
+        className.addEventListnener("click",()=>{
+            if(x == "")
+            {
+                alert("Fill this as mandatory")
+            }
+        })
     </script>
 </body>
 </html>
