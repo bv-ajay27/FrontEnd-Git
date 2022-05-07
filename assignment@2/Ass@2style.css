@@ -1,0 +1,39 @@
+/* *{
+    box-sizing: border-box;
+} */
+.background{
+    background-color:lightcyan;
+}
+.container{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.mainImage{
+    margin: auto;
+    width: 90%;
+}
+.leftImage{
+    margin: auto;
+    left: 50px;
+    /* float: inline-start; */
+    flex-direction: column;
+}
+.rightImage{
+    margin: auto;
+    float: inline-end;
+    right: 25px;
+}
+.text{
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.leftImageText{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.rightImagetext{
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
