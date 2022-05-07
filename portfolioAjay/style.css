@@ -6,7 +6,7 @@ body{
 /*     background-image:url(images/backg.jpg),url(images/magnitute.jpg); */
     background-color: black;
     background-repeat:no-repeat;
-    /* padding: 10px; */
+    padding: 10px;
     background-position: center;
     position: relative;
     width: auto;
@@ -32,7 +32,6 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
-    /* position: fixed; */
 }
 .nav a:hover{
     background-color:rgb(14, 245, 26);
