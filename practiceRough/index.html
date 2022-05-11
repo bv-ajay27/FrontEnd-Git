@@ -4,16 +4,21 @@
         <title>rough</title>
         <link rel="shortcut icon" href="images/favicon.gif" type="image/gif">
         <style>
-            div{
-                background-color: aqua;
-                color: black;
-            }
             h2{
                 color: brown;
                 box-sizing: border-box;
                 border-width: 2px;
                 border: cornflowerblue;
             }
+            .inLineCSS{
+                padding: 20px;
+                color: white;
+                background-color: black;
+            }
+            .uppercase{
+                text-transform:capitalize;
+            }
+            
         </style>
 </head>
 <body>
@@ -60,14 +65,14 @@
 
     <hr>
 
-    <table border="2px">
-        <tbody align="centre">
-            <tr>
+    <table border="4px"; width= "100%";>
+        <tbody style="border: 3px; color:pink;text-align: center;">
+            <th style="color: black;">
                 <td>cell 1</td>
                 <td>cell 2</td>
                 <td>cell 3</td>
                 <td>cell 4</td>
-            </tr>
+            </th>
             <tr>
                 <td>cell 1</td>
                 <td>cell 2</td>
@@ -88,6 +93,21 @@
             </tr>
         </tbody>
     </table>
+    <p style="padding: 30px; color: rgb(226, 53, 82);background-color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, iusto velit impedit magni id fugit veritatis, porro consequatur corrupti eveniet rerum numquam sit, eum odio aliquid eligendi sequi deleniti in.</p>
+    <div class="inLineCSS">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, expedita quasi. Veritatis modi  harum provident voluptatem, incidunt expedita recusandae error sunt possimus aperiam corrupti sequi, explicabo ab non consectetur libero.
+        </p>
+    </div>
+    <div class="uppercase">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nisi ab corrupti porro voluptate error iure voluptas sint quaerat nobis in repellendus nesciunt, quos fugiat, delectus deserunt perferendis a consectetur!
+        </p>
+    </div>
+    <div class="inLineCSS uppercase">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vitae dolore minus eum laudantium provident dolorem consectetur consequatur natus accusamus quibusdam praesentium vel facilis, ab odio adipisci perspiciatis quo unde!
+        </p>
+    </div>
 <br>
 <hr>
 
