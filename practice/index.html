@@ -18,10 +18,29 @@
             .uppercase{
                 text-transform:capitalize;
             }
-            
+            .forecast {
+                width: 30%;
+                margin: 0;
+                padding: .3rem;
+                background-color: #eee;
+                font: 1rem 'Fira Sans', sans-serif;
+            }
+
+            /* .forecast > h1, */
+            .day-forecast {
+                margin: .5rem;
+                padding: .3rem;
+                font-size: 1.2rem;
+            }
+
+            .day-forecast {
+                background: right/contain content-box border-box no-repeat
+                    url(images/Heavy_rain.svg.png) white;
+            }
         </style>
 </head>
 <body>
+    <a href="#bottom">Click to go bottom</a>
     <h2>Text</h2>
     <div class="div-container">
         <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was  extremely painful. <b>Nor again is there anyone who loves or pursues or desires to obtain pain of itself</b> because it is pain, but because occasionally circumstances occur in which toil and pain can procure  that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
@@ -64,7 +83,7 @@
     <a href="LinkFolder/linkedIndex.html">linked to child HTML folder</a>
 
     <hr>
-
+    <h2>tables and row & column spans</h2>
     <table border="4px"; width= "100%";>
         <tbody style="border: 3px; color:pink;text-align: center;">
             <th style="color: black;">
@@ -110,17 +129,147 @@
     </div>
 <br>
 <hr>
+<h2>About Pre Tag & code Tag & some copyright & special charaters</h2>
+<div>
+    <p>
+        <pre>This is a smaple text to show the pre tag function</pre>
+        <pre>this is block element and consider white spaces</pre>
+    </p>
+    <p>
+        <code>This is a code tag text is a inline element charactres comes next to the line it won't consider white spaces</code>
+        <p>
+            This is a smaple text to show the &lt;b&gt; this is in bold by text &lt;/b&gt;
+        </p>
+    </p>
+    <p>
+        copyright by AK <sub>&copy;</sub>2022 <sup>&copy;</sup> <sup>&trade;</sup> 
+    </p>
+</div> 
+<hr>
+<h2>Forms</h2>
+<h3>forms,button,textArea</h3>
+<form action="">
+    <input type="text" value="" placeholder="Enter your Name">
+    <button type="save">save</button>
+    <input type="text" placeholder="Enter your address">
+    <br>
+    <input type="text" placeholder="Enter your @email">
+    <input type="password" placeholder="password">
+    <input type="text" placeholder="Enter your phone number">
+    <input type="search" name="google" id="google">
+</form>
+<hr>
+<h2>Gets the values entered inside the forms in URL</h2>
+<form action="" method="get">
+    <input type="datetime-local" name="India" id="">
+    <input type="datetime" name="DOB" id="DOB">
+    
+    <input type="email" name="email" id="email">  
+    <input type="button" value="submit">
+</form>
+<br>
+<br>
+<hr>
 
+<form action="" method="get">
+    <div>
+        <p>here the text input is mandatory because we keep in HTML as required</p>
+        <input type="text" required name="text">
+    </div>
+    <div>
+        <p>here the email input is mandatory because we keep in HTML as required</p>
+        <input type="email" required name="email" id="">
+        <select name="email" id="">
+            <option value="email">@gmail.com</option>
+            <option value="email">@yahoo.com</option>
+            <option value="email">@outlook.com</option>
+            <option value="" selected="selected">@mymail.com</option>
+            <textarea name="textarea" id="" cols="10" rows="1"></textarea>
+        </select>
+        <input type="datetime-local" id="meeting-time"
+       name="meeting-time" value="2018-06-12T19:30"
+       min="2018-06-07T00:00" max="2018-06-14T00:00">
+       <input type="color" required name="color" id="">
+       <div>
+           <input type="date" name="DOB" id="" placeholder="DOB">
+       </div>
+       <div>
+           <input type="week" name="week" id="" placeholder="day">
+       </div>
+        <button>submit</button>
+    </div>
+</form>
+<br>
+<hr>
+<p>here the list of flavours in data</p>
+<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice"/>
 
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+<br>
+<br>
+<br>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/QrKjT1QJ3Zg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
+<br>
+<br>
+<h2>this is meter or measuring guage or graph</h2>
+<label for="fuel">Fuel level:</label>
+<meter id="fuel"
+       min="0" max="100"
+       low="33" high="50" optimum="50"
+       value="70">
+    <!-- at 80/100 -->
+</meter>
 
+<label for="speed">Speed of a Bike</label>
+<meter id="speed"
+       min="0" max="360" optimum="400"
+       value="150">
+       at 10/100;
+</meter>
+<br>
+<hr>
+<h3>weather status</h3>
+<article class="forecast">
+    <h1>Weather forecast for Seattle</h1>
+    <article class="day-forecast">
+        <h3>9th march 1994</h3>
+        <p>Rain.</p>
+    </article>
+    <article class="day-forecast">
+        <h3>4th jan 3984</h3>
+        <p>Periods of rain.</p>
+    </article>
+    <article class="day-forecast">
+        <h3>27th feb 2022</h3>
+        <p>Heavy rain.</p>
+    </article>
+    <label for="rainfall">meter for rainfall:</label>
+    <meter id="rainfall"
+        min="0" max="100"
+        low="20" high="60" optimum="40"
+        value="80">
+    </meter>
+</article>
+<br>
+<br>
+<hr>
 
-
-
-
-
-    <script>
+<address>
+    Practice by <a href="">AK</a><br>
+    contact me at : AK.Com <br>
+    &copy;2022
+</address>
+<a href="#top">click here to top</a>
+    <!-- <script>
         alert("Practice Page");
-    </script>
+    </script> -->
 </body>
 </html>
