@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Mediation</title>
+</head>
+<body>
+    <div class="app">
+
+        <div class="video-container">
+            <!--Default video-->
+            <video loop src="videos/rain.mp4"></video>
+        </div>
+        <div class="time-select">
+            <button data-time="120">2 Minutes</button>
+            <button data-time="300">5 Minutes</button>
+            <button data-time="600">10 Minutes</button>
+        </div>
+        <div class="player-container">
+            <audio class="song">
+
+            <!--adding default sound track-->
+                <source src="sounds">
+            </audio>
+
+            <!--adding play button image-->
+            <img src="images/play.svg" alt="play Button" height="100px" width="100px" class="play-button">
+            
+            <svg class="track-outline" width="90" height="90" viewBox="0 0 68 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M68 39L0.499996 77.9711L0.5 0.0288552L68 39Z" fill="white"/>
+                </svg>
+
+            <svg class="moving-outline" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="90" fill="white"/>
+                <rect x="60" width="30" height="90" fill="white"/>
+                </svg>
+            <h3 class="time-display">0:00</h3>
+        </div>
+        <div class="sound-picker">
+            <!-- adding sounds-->
+            <button data-sound="sounds/beach.mp3" data-video="videos/beach.mp4">
+                <img src="images/beach.svg" alt="beach">
+            </button>
+            <button data-sound="sounds/rain.mp3" data-video="videos/rain.mp4">
+                <img src="images/rain.svg" alt="rain">
+            </button>
+            
+        </div>
+    </div>
+    
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
