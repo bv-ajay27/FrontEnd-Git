@@ -63,13 +63,13 @@ function weatherDetails(info){
         }else if(id >= 200 && id <= 232){
             wIcon.src = "weather/thunder.svg";  // strom pic
         }else if(id >= 600 && id <= 622){
-            wIcon.src = "weather/snowy-1.svg"; // snow
+            wIcon.src = "weather/snowy-6.svg"; // snow
         }else if(id >= 701 && id <= 781){
-            wIcon.src = "weather/day.svg"; // hazy
+            wIcon.src = "weather/cloudy-day-1.svg"; // hazy
         }else if(id >= 801 && id <= 804){
             wIcon.src = "weather/cloudy.svg"; //cloudy
         }else if((id >= 500 && id <= 531) || (id >= 300 && id <= 321)){
-            wIcon.src = "weather/rainy-1.svg"; // rain
+            wIcon.src = "weather/rainy-7.svg"; // rain
         }
         
         weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
