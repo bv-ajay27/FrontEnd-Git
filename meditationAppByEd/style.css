@@ -11,7 +11,9 @@
     align-items: center;
     font-family: "Montserrat", sans-serif;
   }
-  
+  /* .medium-mins, .long-mins, .short-mins{
+      color: tomato;
+  } */
   .time-select,
   .sound-picker {
     height: 80%;
@@ -23,14 +25,14 @@
   }
   .time-select button,
   .sound-picker button {
-    color: white;
+    color: rgb(240, 230, 230);
     width: 30%;
     height: 10%;
     background: none;
     font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid rgb(146, 228, 187);
     transition: all 0.5s ease;
   }
   
