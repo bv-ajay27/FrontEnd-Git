@@ -124,7 +124,8 @@ header i{
   display: flex;
 }
 .weather-part img{
-  max-width: 125px;
+  max-width: 170px;
+  height: 120px;
 }
 .weather-part .temp{
   display: flex;
