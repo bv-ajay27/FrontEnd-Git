@@ -6,6 +6,7 @@
   
   .app {
     height: 100vh;
+    width: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -18,6 +19,7 @@
   .sound-picker {
     height: 80%;
     display: flex;
+    background-position: 100%;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
@@ -77,7 +79,7 @@
     pointer-events: none;
   }
   .player-container svg circle {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   /* removed the restart button by keeping height =0 */
   .replay{
@@ -94,7 +96,6 @@
   video {
     position: fixed;
     top: 0%;
-    left: 0%;
-    width: 100%;
+    width: auto;
     z-index: -1;
   }
