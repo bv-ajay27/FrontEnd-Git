@@ -42,10 +42,10 @@
     border-radius: 50%;
   }
   .sound-picker button:nth-child(1) {
-    background: #4972a1;
+    background: #e7490b;
   }
   .sound-picker button:nth-child(2) {
-    background: #a14f49;
+    background: #5da5e9;
   }
   .sound-picker button img {
     height: 100%;
@@ -77,6 +77,11 @@
   .player-container svg circle {
     transition: all 0.2s ease-in-out;
   }
+  /* removed the restart button by keeping height =0 */
+  .replay{
+      height: 0%;
+      position: absolute;
+  }
   .time-display {
     color: white;
     position: absolute;
@@ -89,5 +94,5 @@
     top: 0%;
     left: 0%;
     width: 100%;
-    z-index: -10;
+    z-index: -1;
   }
