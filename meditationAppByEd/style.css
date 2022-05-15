@@ -38,7 +38,7 @@
   border-radius: 5px;
   cursor: pointer;
   border: 2px solid rgb(146, 228, 187);
-  transition: all 0.5s ease;
+  transition: all 0.1s ease;
 }
 
 .sound-picker button {
@@ -82,7 +82,7 @@
   pointer-events: none;
 }
 .player-container svg circle {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 /* removed the restart button by keeping height =0 */
 .replay{
