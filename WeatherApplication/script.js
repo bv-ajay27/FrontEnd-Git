@@ -65,9 +65,9 @@ function weatherDetails(info){
         }else if(id >= 600 && id <= 622){
             wIcon.src = "weather/snowy-1.svg"; // snow
         }else if(id >= 701 && id <= 781){
-            wIcon.src = "weather/weather-sprite.svg"; // hazy
+            wIcon.src = "weather/day.svg"; // hazy
         }else if(id >= 801 && id <= 804){
-            wIcon.src = "weather/cloudy-day-1.svg"; //cloudy
+            wIcon.src = "weather/cloudy.svg"; //cloudy
         }else if((id >= 500 && id <= 531) || (id >= 300 && id <= 321)){
             wIcon.src = "weather/rainy-1.svg"; // rain
         }
