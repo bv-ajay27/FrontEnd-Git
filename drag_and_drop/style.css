@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cairo:wght@500&family=Josefin+Sans:ital,wght@0,400;1,300&family=Lato:ital,wght@0,400;1,100&family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Text&family=Merriweather:ital,wght@1,300&family=Nova+Square&family=Poppins:ital,wght@1,200&family=Roboto+Mono&family=Roboto:ital,wght@1,100&family=Square+Peg&display=swap');
+*{
+    background-color: black;
+    box-sizing: border-box;
+    color: rgb(205, 209, 202);
+}
+body{
+    background-color: rgb(166, 166, 156);
+    font-family: 'Times New Roman', Times, serif;
+}
+.main{
+    
+    display: flex;
+    flex-flow: column;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    padding-top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 50px;
+    color: rgb(233, 227, 227);
+    font-family: cairo,Merriweather;
+}
+.lists{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    overflow-x: scroll;
+}
+.lists .list{
+    border-radius: 8px;
+    background-color: rgb(13, 36, 1);
+    display: flex;
+    text-align: center;
+    flex-flow: column;
+    font-family: bree serif,Merriweather,cairo;
+    font-size: 20px;
+    justify-content: baseline;
+    flex: 1;
+    width: 100%;
+    min-width: 250px;
+    max-width: auto;
+    height: 100%;
+    min-height: 150px;
+    margin: 0 15px;
+    padding: 10px;
+    transition: all 0.2s linear;
+}
+.lists .list li{
+    background-color: rgb(83, 102, 102);
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 4px 10px;
+}
