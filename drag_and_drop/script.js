@@ -27,15 +27,15 @@ for(let i=0;i<listItem.length;i++){
             });
             list.addEventListener('dragEnter',function(){
                 e.preventDefault();
-                this.style.backgroundColor = 'rgb(113, 154, 51)';
+                this.style.backgroundColor = 'rgb(332,151,74';
             });
             list.addEventListener('dragLeave',function(){
-                this.style.backgroundColor = 'rgb(113, 154, 51)' ;
+                this.style.backgroundColor = 'rgb(332,151,74';
             });
             list.addEventListener('drop', function(){
                 console.log('drop');
                 this.append(draggedItem);
-                this.style.backgroundColor = 'rgb(113, 154, 51)' ;
+                this.style.backgroundColor = 'rgb(332,151,74';
             });
     }
 }

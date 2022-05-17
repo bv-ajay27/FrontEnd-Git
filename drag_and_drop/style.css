@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cairo:wght@500&family=Josefin+Sans:ital,wght@0,400;1,300&family=Lato:ital,wght@0,400;1,100&family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Text&family=Merriweather:ital,wght@1,300&family=Nova+Square&family=Poppins:ital,wght@1,200&family=Roboto+Mono&family=Roboto:ital,wght@1,100&family=Square+Peg&display=swap');
 *{
     background-color: black;
+    /* background-image: url(images/john-schaidler-9V3Q2W_mRLE-unsplash.jpg); */
+    background-repeat: no-repeat;
     box-sizing: border-box;
     color: rgb(205, 209, 202);
 }
