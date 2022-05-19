@@ -1,5 +1,5 @@
+package couponCodeGenerator;
 import java.util.*;
-import java.lang.*;
 import java.io.*;
 import java.util.Random;
 
@@ -8,19 +8,24 @@ import java.util.Random;
 class Main
 {
     static Scanner sc = new Scanner(System.in);
+
     static boolean verfication(){
-        // Scanner scVer = new Scanner(System.in);
         String Name = sc.next();
         String phNum = sc.next();
-        HashMap<String,Integer> map = new HashMap<>();
-        if(phNum.length() != 10) return false;
+        if(phNum.length() != 10)
+        {
+            System.out.println("Please Enter a Valid Name & Mobile Number");
+            verfication(); 
+        }
+        HashMap<String,String> map = new HashMap<>();
         if(map.containsKey(phNum))
         {
+            System.out.println("Member already claimed the copoun :(");
             return false;
         }
         else
         {
-           map.put(phNum,map.getOrDefault(phNum,0)+1); 
+           map.put(phNum,Name); 
         }
         return true;
     }
@@ -102,7 +107,7 @@ class Main
                 {
                     System.out.println("Enter you Name and Mob Number");
                     boolean isValid = verfication();
-                    if(isValid == true)
+                    if(isValid)
                     {
                         System.out.println("press 1 to generate coupon code");
                         int Homecoupon = sc.nextInt();
@@ -114,20 +119,23 @@ class Main
                         System.out.println("Thank you");
                     }
                     else{
-                        System.out.println("Please Enter a vald Number");
+                        System.out.println("Please Enter a vald details");
                         verfication();
                     }
+                }
+                else{
+                    getCategeories(n);
                 }
                 break;
                 
             case 2:
                 System.out.println("products we offer");
                 int WatchProduct = Watches();
-                if(WatchProduct > 0)
+                if(WatchProduct > 0 && WatchProduct <= 3)
                 {
                     System.out.println("Enter you Name and Mob Number");
                     boolean isValid = verfication();
-                    if(isValid == true)
+                    if(isValid)
                     {
                         System.out.println("press --> 1 to generate coupon code");
                         int Watchcoupon = sc.nextInt();
@@ -139,19 +147,23 @@ class Main
                         System.out.println("Thank you");
                     }
                     else{
-                        System.out.println("Please Enter a valid Number");
+                        System.out.println("Please Enter a vald details");
+                        verfication();
                     }
+                }
+                else{
+                    getCategeories(n);
                 }
                 break;
                 
             case 3:
                 System.out.println("Products we offer");
                 int bikes=Bikes();
-                if(bikes>0)
+                if(bikes>0 && bikes <= 3)
                 {
                     System.out.println("Enter you Name and Mob Number");
                     boolean isValid = verfication();
-                    if(isValid == true){
+                    if(isValid){
                     System.out.println("press --> 1 to generate coupon code");
                     int bikecoupon = sc.nextInt();
                     String coupon = getCoupon();
@@ -160,43 +172,72 @@ class Main
                     System.out.println("You got a discount of Rs. " +bikeCouponWorth);
                     System.out.println();
                     System.out.println("Thank you");
+                    System.out.println();
                     }
                     else{
-                        System.out.println("Please Enter a valid Number");
+                        System.out.println("Please Enter a vald details");
+                        verfication();
                     }
+                }
+                else{
+                    getCategeories(n);
                 }
                 break;
         }
     }
     
-    static void getMenu()
-    {
-        Scanner sc = new Scanner(System.in);
-		System.out.println("Select from below Catageories");
-		System.out.println("Press 1 -> Home Appliances");
-		System.out.println("Press 2 -> Watches");
-		System.out.println("Press 3 -> Bikes");
-		System.out.println("Press 0 to Exit");
+    // static void getMenu()
+    // {
+    //     // Scanner sc = new Scanner(System.in);
+	// 	System.out.println("Select from below Catageories");
+	// 	System.out.println("Press 1 -> Home Appliances");
+	// 	System.out.println("Press 2 -> Watches");
+	// 	System.out.println("Press 3 -> Bikes");
+	// 	System.out.println("Press 0 to Exit");
 		
-		int wish = sc.nextInt();
-		if(wish > 0 && wish<=3)
-		{
-		   getCategeories(wish); 
-		}
-		else if(wish>3)
-		{
-		   System.out.println("Please press from the given options");
-		   System.out.println();
-		   getMenu();
-		}
-		else
-		{
-		    System.out.println("Thank you visit again");
-		}
-    }
+	// 	opt = sc.nextInt();
+	// 	if(opt > 0 && opt<=3)
+	// 	{
+	// 	   getCategeories(opt); 
+	// 	}
+	// 	else if(opt>3)
+	// 	{
+	// 	   System.out.println("Please press from the given options");
+	// 	   System.out.println();
+	// 	   getMenu();
+	// 	}
+	// 	else
+	// 	{
+	// 	    System.out.println("Thank you visit again");
+	// 	}
+    // }
     
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		getMenu();
+        int opt;
+        do{
+            System.out.println();
+            System.out.println("Choose from Below Catageories..:)");
+            System.out.println("Press 1 -> Home Appliances");
+            System.out.println("Press 2 -> Watches");
+            System.out.println("Press 3 -> Bikes");
+            System.out.println("Press 0 to Exit");
+
+            opt = sc.nextInt();
+
+            if(opt > 0 && opt < 5)
+            {
+                getCategeories(opt);
+            }
+            else if(opt > 4)
+            {
+                System.out.println("Please choose from the given options :(");
+            }
+            else{
+                System.out.println("ThankYou visit again :)");
+            }
+        }
+        while(opt != 0);
+		
 	}
 }
