@@ -1,9 +1,8 @@
 package bankProject;
 import java.util.*;
-import bankProject.Bank;
-import java.io.*;
 
 public class BankRunner {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
 
         Bank bank = new Bank();
@@ -18,7 +17,6 @@ public class BankRunner {
             System.out.println("2. Send Money");
             System.out.println("8. Exit");
 
-            Scanner sc = new Scanner(System.in);
             int id;
             String password;
 

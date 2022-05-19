@@ -35,3 +35,19 @@ body{
     margin-top: 2%;
     background-position: calc(0,10,0);
 }
+.circle{
+    border: 2px;
+    border-style: double;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 10;
+}
+.leaf{
+    background-color: green;
+    border: 10px;
+    border-style: groove;
+    width: 300px;
+    height: 250px;
+    border-radius: 9px 50% 9px 50%;
+}

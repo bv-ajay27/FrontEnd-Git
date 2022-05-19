@@ -1,7 +1,5 @@
 package bankProject;
-import bankProject.User;
 import java.util.*;
-import java.io.*;
 
 /**
  * Create Account
