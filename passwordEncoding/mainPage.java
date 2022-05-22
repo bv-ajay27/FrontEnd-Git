@@ -1,7 +1,7 @@
 package passwordEncoding;
 import java.util.Scanner;
 
-public class main {
+public class mainPage {
     public static void main(String[] args) {
         System.out.println("WELCOME TO PASSWORD MANAGEMENT SYSTEM");
 		goToInstructions();     
@@ -15,7 +15,7 @@ public class main {
             
             do{
                 System.out.println("1.Create an Account");
-                System.out.println("2. login Account");
+                System.out.println("2.login Account");
                 System.out.println("3.Encrypt your password");
                 System.out.println("4.Decrypt your password");
                 System.out.println("5.Reset your password");
