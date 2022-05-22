@@ -24,11 +24,12 @@ public class Main {
                     boolean check = genCode.codeGenerator(name,phNum);
                     if(check)
                     {
-                        System.out.println("Enter to Generate couponCode");
+                        System.out.println("Here is the Coupon Code with couponWorth :)");
                         // int access = sc.nextInt();
                         String coupon = genCode.getCoupon();
                         int worth = genCode.getCouponWorth(coupon,opt);
                         System.out.println("yours coupon: " + coupon + "  & " + "worth : "+worth);
+                        System.out.println();
                     }
                     else{
                         System.out.println("Try with another account ThankYou..:)");
@@ -53,11 +54,12 @@ public class Main {
                     boolean check = genCode.codeGenerator(name,phNum);
                     if(check)
                     {
-                        System.out.println("press Enter 1 to Generate couponCode");
+                        System.out.println("Here is the Coupon Code with couponWorth :)");
                         // int access = sc.nextInt();
                         String coupon = genCode.getCoupon();
                         int worth = genCode.getCouponWorth(coupon,opt);
                         System.out.println("yours coupon: " + coupon + "  & " + "worth : "+worth);
+                        System.out.println();
                     }
                     else{
                         System.out.println("Try with another account ThankYou..:)");
@@ -82,11 +84,12 @@ public class Main {
                     boolean check = genCode.codeGenerator(name,phNum);
                     if(check)
                     {
-                        System.out.println("Enter 1 to Generate couponCode");
+                        System.out.println("Here is the Coupon Code with couponWorth :)");
                         // int access = sc.nextInt();
                         String coupon = genCode.getCoupon();
                         int worth = genCode.getCouponWorth(coupon,opt);
                         System.out.println("yours coupon: " + coupon + "  & " + "worth : "+worth);
+                        System.out.println();
                     }
                     else{
                         System.out.println("Try with another account ThankYou..:)");
@@ -111,7 +114,7 @@ public class Main {
                     boolean check = genCode.codeGenerator(name,phNum);
                     if(check)
                     {
-                        System.out.println("Enter 1--> to Generate couponCode");
+                        System.out.println("Here is the Coupon Code with couponWorth :)");
                         // int access = sc.nextInt();
                         String coupon = genCode.getCoupon();
                         int worth = genCode.getCouponWorth(coupon,opt);
