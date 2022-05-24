@@ -21,7 +21,7 @@ public class Main {
                     System.out.println("Enter your Name");
                     name = sc.next();
 
-                    boolean check = genCode.codeGenerator(name,phNum);
+                    boolean check = genCode.codeGenerator(phNum,name);
                     if(check)
                     {
                         System.out.println("Here is the Coupon Code with couponWorth :)");
@@ -51,7 +51,7 @@ public class Main {
                     System.out.println("Enter your Name");
                     name = sc.next();
 
-                    boolean check = genCode.codeGenerator(name,phNum);
+                    boolean check = genCode.codeGenerator(phNum,name);
                     if(check)
                     {
                         System.out.println("Here is the Coupon Code with couponWorth :)");
@@ -81,7 +81,7 @@ public class Main {
                     System.out.println("Enter your Name");
                     name = sc.next();
 
-                    boolean check = genCode.codeGenerator(name,phNum);
+                    boolean check = genCode.codeGenerator(phNum,name);
                     if(check)
                     {
                         System.out.println("Here is the Coupon Code with couponWorth :)");
@@ -111,7 +111,7 @@ public class Main {
                     System.out.println("Enter your Name");
                     name = sc.next();
 
-                    boolean check = genCode.codeGenerator(name,phNum);
+                    boolean check = genCode.codeGenerator(phNum,name);
                     if(check)
                     {
                         System.out.println("Here is the Coupon Code with couponWorth :)");
