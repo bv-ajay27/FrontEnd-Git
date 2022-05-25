@@ -5,22 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
-<body>
+<body>  
     <h1 id="sample">hello javaScript</h1>
-
-    <radio class="test"><input type="text"></radio>
-
-    <button type="button" class="className">submit </button>
-    <script>
-        document.getElementById("sample").innerHTML = "this is new one";
-        let x = document.getElementsByClassName(test).innerHTML;
-        className.addEventListnener("click",()=>{
-            if(x == "")
-            {
-                alert("Fill this as mandatory")
-            }
-        })
-    </script>
+    <div class="bg">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor saepe natus nisi aperiam quasi ipsam optio accusantium non nostrum aspernatur suscipit recusandae repellat impedit explicabo porro sapiente, odit libero.
+        </p>
+    </div>
+    <button onclick="changeBG">click to change BG</button>
+    <div id="demo" >
+        <p>
+            This is a function call
+        </p>
+    </div>
+    <button onclick="callingFun()">click Me!</button>
+    <hr>
+    <hr>
+    <br>
+    <div>
+        Adding two or more numbers
+        <p id="add"></p>
+    </div>
+    <div>
+        subtraction for two or more numbers
+        <p id="sub"></p>
+    </div>
+    <div>
+        division for two or more numbers
+        <p id="div"></p>
+    </div>
+    <div>
+        modulus for two or more numbers
+        <p id="mod"></p>
+    </div>
+    <hr>
+    <hr>
+    <h3>Objects in JS</h3>
+    <div>
+        <p id="obj">This is Object in JS</p>
+        <button onclick="ajay()">click me</button>
+    </div>
+    <h2>calling function inside the obj</h2>
+    <div>
+        <p id="objFun">By click on the button it will call to function in object</p>
+        <button onclick="objFun()">toKnow</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
