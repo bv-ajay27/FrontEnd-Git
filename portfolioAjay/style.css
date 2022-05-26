@@ -14,7 +14,7 @@ body{
     background-size: cover;
 }
 .menu-container{
-    position: absolute;
+    /* position: absolute; */
     margin: 20px;
     max-width: auto;
     position: fixed;
@@ -23,7 +23,7 @@ body{
     overflow: hidden;
     background-color: rgb(240, 132, 10);
     border-radius: 9px;
-    position: sticky;
+    /* position: sticky; */
 }
 .nav a{
     float: left;
@@ -140,17 +140,20 @@ h2{
     margin: auto;
     left: 300px;
     background-color: rgb(10, 10, 9);
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border: 2px;
     border-radius: 5px;
     align-items: center;
     padding-left: 44%;
 }
 .icons{
-    align-items: center;
-    flex-direction: column;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    position: relative;
 }
 .reachMe:hover{
+    display: block;
+    position: absolute;
     cursor: pointer;
     background-color: rgb(2, 5, 20);
     padding:2px;
