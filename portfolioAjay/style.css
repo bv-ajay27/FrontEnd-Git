@@ -45,6 +45,12 @@ body{
     font-size: 20px;
     color: rgb(241, 233, 114);
 }
+.gifPic{
+    position: absolute;
+    left: 680px;
+    top: -170px;
+    z-index: -1;
+}
 .ajay{
     font-family: merriweather,sans-serif;
     font-weight: bold;
@@ -102,7 +108,7 @@ h2{
 }
 .projects-container{
     margin-left: 100px;
-    margin-right: 15px;
+    margin-right: 20px;
     left: 100px;
     max-width: 1000px;
     /* text-align: left; */
@@ -138,23 +144,16 @@ h2{
 }
 .reachMe{
     margin: auto;
-    left: 300px;
-    background-color: rgb(10, 10, 9);
-    /* box-sizing: border-box; */
-    border: 2px;
-    border-radius: 5px;
+    /* position: relative; */
+    text-align: center;
+    align-content: space-between;
     align-items: center;
-    padding-left: 44%;
 }
 .icons{
-    /* align-items: center; */
-    /* flex-direction: column; */
-    position: relative;
+    /* padding: 5px 5px 5px 5px; */
 }
-.reachMe:hover{
-    display: block;
-    position: absolute;
+.reachMe a :hover{
+    color: whitesmoke;
     cursor: pointer;
-    background-color: rgb(2, 5, 20);
-    padding:2px;
+    background-color: rgb(3, 7, 36);
 }
