@@ -22,7 +22,7 @@ body{
 .nav{
     overflow: hidden;
     background-color: rgb(240, 132, 10);
-    border-radius: 9px;
+    border-radius: 8px;
     /* position: sticky; */
 }
 .nav a{
@@ -40,6 +40,7 @@ body{
 
 .name{
     position: relative;
+    /* margin-left: 150px; */
     text-align: center;
     font-family:'square peg',sans-serif;
     font-size: 20px;
