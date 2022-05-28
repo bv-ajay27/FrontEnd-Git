@@ -152,7 +152,8 @@ h2{
     align-content: space-around;
 }
 .reachMe a :hover{
-    color: rgb(243, 242, 234);
+    color: rgb(243, 144, 13);
+    padding: 5px;
     cursor: pointer;
     background-color: rgb(3, 7, 36);
 }

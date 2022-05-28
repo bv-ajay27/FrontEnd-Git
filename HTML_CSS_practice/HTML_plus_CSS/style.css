@@ -1,7 +1,5 @@
 *{
     box-sizing: border-box;
-    /* margin: 0; */
-    /* overflow: hidden; */
 }
 body{
     background-color: black;
@@ -189,4 +187,53 @@ body{
     border: 1px solid red;
     height: 40px;
     width: 1080px;
+}
+.specificity box{
+    background-color: aqua;
+    color: black;
+    overflow: scroll;
+}
+.boxHover{
+    height: 50px;
+    width: 500px;
+    border: 2px solid wheat;
+}
+.boxHover:hover{
+    background-color: brown;
+    color: greenyellow;
+}
+.boxHover:not(.notSelect){
+    background-color: aqua;
+    color: rgb(20, 17, 17);
+}
+/*select me from a list */
+.boxH{
+    height: 50px;
+    width: 500px;
+    border: 2px solid wheat;
+}
+.boxH :nth-child(2){
+    text-align: center;
+    background-color: chocolate;
+}
+/* Box Layer*/
+.boxLayer{
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    position: relative
+}
+.boxLayer ::before{
+    content: ' ';
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
 }
