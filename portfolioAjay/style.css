@@ -95,6 +95,8 @@ h2{
 .skills-container{
     left: 100px;
     width: auto;
+    display: grid;
+    grid-column: auto auto auto;
     font-size:18px;
     color: aliceblue;
     /* max-width: auto; */
@@ -145,16 +147,14 @@ h2{
 }
 .reachMe{
     margin: auto;
-    /* position: relative; */
     text-align: center;
-    align-content: space-between;
     align-items: center;
 }
 .icons{
-    /* padding: 5px 5px 5px 5px; */
+    align-content: space-around;
 }
 .reachMe a :hover{
-    color: whitesmoke;
+    color: rgb(243, 242, 234);
     cursor: pointer;
     background-color: rgb(3, 7, 36);
 }
