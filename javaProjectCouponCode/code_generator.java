@@ -1,6 +1,15 @@
 package javaProjectCouponCode;
 import java.util.HashMap;
 
+class user {
+    String phNum;
+    String name;
+    user(String phNum,String name){
+        this.name = phNum;
+        this.phNum = name;
+    }
+}
+
 public class code_generator {
     public static HashMap<String,user> customer;
 
@@ -9,14 +18,22 @@ public class code_generator {
     }
     public boolean codeGenerator(String phNum,String name){
         user newUser = new user(phNum,name);
-        if(phNum.length() < 10 && phNum.length() > 10)
+        if(phNum.length() != 10) return false;
+        if(phNum.length() == 10)
         {
-            System.out.println("Enter valid 10 digits mobile Number");
-            return false;
+            for(int i=0;i<phNum.length();i++)
+            {
+                int asci = phNum.charAt(i);
+                if(asci < 48 || asci > 58)
+                {
+                    System.out.println("Enter a valid 10 digits mobile Number--(characters not allowed)");
+                    return false;
+                }
+            }
         }
         if(customer.containsKey(phNum)){
             System.out.println();
-            System.out.println(name +":("+ "sorry you have already claimed the coupon :(");
+            System.out.println("sorry @ " + name + " you have already claimed the coupon :(");
             System.out.println();
             return false;
         }
@@ -52,12 +69,12 @@ public class code_generator {
         
         if(n == 1)
         {
-            discount*=5;
+            discount*=6;
         }
         else if(n == 4)
         {
-            discount*=15;
+            discount*=9;
         }
-        return discount*7;
+        return discount*4;
     }
 }

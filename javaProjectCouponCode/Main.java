@@ -3,7 +3,7 @@ import java.util.*;
 
 
 public class Main {
-    static String name = "",phNum = "";
+    public static String name = "",phNum = "";
     static Scanner sc = new Scanner(System.in);
     public static products product = new products();
     public static code_generator genCode = new code_generator();
@@ -32,7 +32,7 @@ public class Main {
                         System.out.println();
                     }
                     else{
-                        System.out.println("Try with another account ThankYou..:)");
+                        System.out.println("Try with another account/Enter a valid Mobile Number ThankYou..:)");
                         System.out.println();
                     }
                 }
@@ -62,7 +62,7 @@ public class Main {
                         System.out.println();
                     }
                     else{
-                        System.out.println("Try with another account ThankYou..:)");
+                        System.out.println("Try with another account/Enter a valid Mobile Number ThankYou..:)");
                         System.out.println();
                     }
                 }
@@ -92,7 +92,7 @@ public class Main {
                         System.out.println();
                     }
                     else{
-                        System.out.println("Try with another account ThankYou..:)");
+                        System.out.println("Try with another account/Enter a valid Mobile Number ThankYou..:)");
                         System.out.println();
                     }
                 }
@@ -122,7 +122,7 @@ public class Main {
                         System.out.println();
                     }
                     else{
-                        System.out.println("Try with another account ThankYou..:)");
+                        System.out.println("Try with another account/Enter a valid Mobile Number ThankYou..:)");
                         System.out.println();
                     }
                 }
