@@ -8,7 +8,7 @@ body{
 .container{
     border: 2px solid rgb(4, 4, 56);
     background-color: rgb(238, 235, 235);
-    height: 450px;
+    height: 465px;
     max-width: 350px;
     overflow: hidden;
     border-radius: 4px;
@@ -19,16 +19,20 @@ body{
     height: 100px;
     line-height: 70px;
     padding: 1;
-    font-size: 35px;
+    font-size: 45px;
 }
 .buttons{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    /* grid-gap: 3px; */
+    background-color: rgb(37, 35, 35);
 }
 .btn{
     border: 1px solid rgb(43, 88, 236);
-    border-radius: 2px;
     background-color: rgb(19, 17, 17);
+    border-radius: 50%;
+    justify-content: space-around;
     color: aliceblue;
     text-align: center;
     line-height: 70px;
@@ -39,5 +43,4 @@ body{
     background-color: rgb(49, 47, 47);
     transition: 0.4s ease-out;
     cursor: pointer;
-    border-radius: 3px;
 }
