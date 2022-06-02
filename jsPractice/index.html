@@ -13,12 +13,13 @@
 </head>
 <body>  
     <h1 id="sample">hello javaScript</h1>
-    <div class="bg">
+    <div id="bg">
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor saepe natus nisi aperiam quasi ipsam optio accusantium non nostrum aspernatur suscipit recusandae repellat impedit explicabo porro sapiente, odit libero.
         </p>
+        <button onclick="changeBG()">click to change BG</button>
     </div>
-    <button onclick="changeBG">click to change BG</button>
+    
     <div id="demo" >
         <p>
             This is a function call
@@ -55,6 +56,24 @@
     <div>
         <p id="objFun">By click on the button it will call to function in object</p>
         <button onclick="objFun()">toKnow</button>
+    </div>
+    <div>
+        <h3>Displaying time & date</h3>
+        <p id="getTime" style="color: rgb(236, 105, 17);" font-weight="bold"></p>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <h2>Math functions & string functions & mislineous functions</h2>
+    <div>
+        <h3>Logical & Bit Wise operators</h3>
+        <p id="ANDopp">Here Both '&' and '&&' works same</p>
+        <button onclick="Logicalopp()">AND operator</button>
+        <p id="ORopp">Here Both '|' and '||' works same</p>
+        <button onclick="Logicalopp()">OR operator</button>
+        <p id="XORopp">Here Both '^'  works </p>
+        <button onclick="Logicalopp()">XOR opp</button>
+        <button></button>
     </div>
     <script src="script.js"></script>
 </body>

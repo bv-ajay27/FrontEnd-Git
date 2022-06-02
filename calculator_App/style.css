@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 2px solid rgb(4, 4, 56);
+    background-color: rgb(238, 235, 235);
+    height: 450px;
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+#display{
+    color: rgb(17, 15, 15);
+    text-align: right;
+    height: 100px;
+    line-height: 70px;
+    padding: 1;
+    font-size: 35px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.btn{
+    border: 1px solid rgb(43, 88, 236);
+    border-radius: 2px;
+    background-color: rgb(19, 17, 17);
+    color: aliceblue;
+    text-align: center;
+    line-height: 70px;
+    font-size: 21px;
+}
+.btn:hover{
+    color: white;
+    background-color: rgb(49, 47, 47);
+    transition: 0.4s ease-out;
+    cursor: pointer;
+    border-radius: 3px;
+}
