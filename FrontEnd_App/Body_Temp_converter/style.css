@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container{
+    border: 1px solid rgb(36, 36, 240);
+    background-image:url(images/background.png);
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 400px;
+    position: relative;
+}
+.list{
+    border: 1px solid black;
+    height: 49.6vh;
+    width: 200px;
+}
+.list ul{
+    margin: 15vh auto;
+}
+#inputTemp{
+    position: relative;
+}
