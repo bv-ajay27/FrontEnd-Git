@@ -1,4 +1,9 @@
-const inputT = document.getElementByTagName("input");
+let inputT = document.getElementById("Temp").value;
 
-const temp = document.getElementsByTagName("input");
-console.log(temp);
+let tempMeasure = document.getElementsByTagName("option").value;
+// console.log(inputT);
+
+
+function changePara(){
+    document.getElementById("demo").innerHTML = "Paragraph changed";
+}
