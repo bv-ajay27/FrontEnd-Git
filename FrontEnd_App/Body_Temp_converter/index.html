@@ -16,23 +16,25 @@
                 <li>Kelvin</li>
             </ul>
         </div>
-        <div>
+        <div class="converter">
             <!-- <form action="temp" method="get"> -->
                 <label for="input">Temperature :</label>
-                <input type="number" value="" id="Temp" return this.value>
+                <input type="text" name="value" value="0" id="Temp">
                 <select>
-                    <option value="celcius">Celcius</option>
-                    <option value="Fahrenheit">Fahrenheit</option>
-                    <option value="Kelvin">Kelvin</option>
+                    <option value="celcius">&deg;C</option>
+                    <option value="Fahrenheit">&deg;F</option>
+                    <option value="Kelvin">&deg;K</option>
                 </select>
-                <button>Convert..</button>
+                <br>
+                <button>Convert</button>
+                <br>
                 <label for="output">Output</label>
                 <input type="text">
             <!-- </form> -->
         </div>
         <div id="outputTemp"></div>
-        <p id="demo">Hello </p>
-        <button onclick="changePara()">changePara</button>
+        <!-- <p id="demo">Hello </p>
+        <button onclick="changePara()">changePara</button> -->
     </div>
     <script src="script.js"></script>
 </body>

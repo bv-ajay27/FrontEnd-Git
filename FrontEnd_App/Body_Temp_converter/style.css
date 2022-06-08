@@ -12,18 +12,23 @@ body{
     background-position: center;
     justify-content: center;
     background-repeat: no-repeat;
-    height: 50vh;
-    width: 400px;
+    height: 60vh;
+    width: 500px;
     position: relative;
-}
-.list{
-    border: 1px solid black;
-    height: 49.6vh;
-    width: 200px;
 }
 .list ul{
-    margin: 15vh auto;
+    margin: 15vh 0px 0px 0px;
 }
-#inputTemp{
-    position: relative;
+.converter{
+    border: 1px solid red;
+    width: 150px;
+    height: auto;
+    position: absolute;
+    
+}
+input{
+    width: 100px;
+}
+.converter button{
+    align-items: center;
 }
