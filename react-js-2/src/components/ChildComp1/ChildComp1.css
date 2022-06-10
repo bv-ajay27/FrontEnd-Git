@@ -1,0 +1,13 @@
+.ChildComp1{
+    background-color: rgb(48, 46, 46);
+    color: rgb(218, 223, 228);
+    font-style: oblique;
+    font-size: 20px;
+}
+.ChildComp1 p b{
+    color: red;
+}
+.SubChildComp1 h2{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

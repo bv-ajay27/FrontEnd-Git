@@ -1,0 +1,16 @@
+/* *{
+    box-sizing: border-box;
+} */
+.ChildComponent3 {
+    background-color: rgb(82, 228, 179);
+    color: rgb(235, 224, 224);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+h1{
+    color: rgb(15, 15, 15);
+    font-size: 25px;
+}
