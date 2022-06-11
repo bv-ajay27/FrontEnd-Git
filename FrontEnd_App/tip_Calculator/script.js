@@ -20,5 +20,5 @@ function getRating(){
     const bill = document.getElementById("billAmount").value;
 
     //final tip
-    document.getElementById("tipAmount").innerHTML = bill*overall;
+    document.getElementById("tipAmount").innerHTML = "Tip Amount : " (bill*overall);
 }

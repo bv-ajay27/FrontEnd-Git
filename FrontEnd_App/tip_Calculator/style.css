@@ -1,11 +1,26 @@
 *{
     box-sizing: border-box;
 }
-.container{
+body{
     background-image: url(images/backgrd.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: max-content;
+}
+.container{
+    border: solid 5px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(white, white), 
+      linear-gradient(315deg,#833ab4,#6fcc17 50%,#fcb045);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 5px;
+    height: 100vh;
+    width: 120vh;
+    margin: 10vh auto;
+    overflow: hidden;
+    
+    
 }
 h2{
     background-color: rgb(240, 134, 82);
