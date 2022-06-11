@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-image: url(images/backgrd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+}
+h2{
+    background-color: rgb(240, 134, 82);
+    color: rgb(10, 6, 3);
+    max-width: fit-content;
+    padding: 0.5px 8px;
+    border-radius: 5px;
+    border-style: ridge;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    border-radius: 3px;
+    border-color: rgb(8, 180, 248);
+    height: 30px;
+    width: 120px;
+    color: navy;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+label{
+    background-color: rgb(216, 181, 92);
+    font-size: 25px;
+    color: darkred;
+    border-radius: 8px;
+    padding: 0.5px 8px;
+    font-display: bold;
+}
+h3{
+    background-color: green;
+    border-radius: 3px;
+    max-width: fit-content;
+}
