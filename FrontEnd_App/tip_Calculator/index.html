@@ -9,45 +9,43 @@
 </head>
 <body>
     <div class="container">
-        <!-- User interface -->
-        <div class="GUI">
-            <!-- About food color and taste -->
-            <div class="foodContainer">
-                <h2>Rating on Food</h2>
-                <label for="foodTaste">Taste :</label>
-                <input type="number" value="0" id="tasteRating" max="5">
-                <label for="foodColor">color :</label>
-                <input type="number" value="0" id="colorRating" max="5">
-                <label for="foodAroma">Aroma :</label>
-                <input type="number" value="0" id="aromaRating" max="5">
-                <h3 id="foodRating">Rating :</h3>
-            </div>
-            <!-- about service -->
-            <div class="service">
-                <h2>Rating on Service</h2>
-                <label for="service">Servicing</label>
-                <input type="number" value="0" id="waiter" max="5">
-                <h3 id="ServiceRating">Service Rating :</h3>
-            </div>
-            <!-- about Restaurent Hygene and maintainance -->
-            <div class="hygene">
-                <h2>Rating Staff & Restaurent Hygene</h2>
-                <label for="waiterHygene">Staff :</label>
-                <input type="number" value="0" id="staffHygene" max="5">
-                <label for="overallmaintainance">Overall Look and Atmosphere :</label>
-                <input type="number" value="0" id="overallLook" max="5">
-                <h3 id="HygeneRating">Rating on Hygene :</h3>
-            </div>
-            <!-- food bill -->
-            <h2 class="billAmount">Overall Bill INR</h2>
-            <label for="bill">Enter Bill Amount</label>
-            <input type="number" value="0" id="billAmount">
-            <div class="tip-Amount"></div>
-            <br>
-            <input type="button" value="GetTip" onclick="getRating()">
-            <br>
-            <h2 id="tipAmount">Tip Amount :</h2>
+        <!-- About food color and taste -->
+        <div class="foodContainer">
+            <h2>Rating on Food</h2>
+            <label for="foodTaste">Taste :</label>
+            <input type="number" value="0" id="tasteRating" max="5">
+            <label for="foodColor">Color :</label>
+            <input type="number" value="0" id="colorRating" max="5">
+            <label for="foodAroma">Aroma :</label>
+            <input type="number" value="0" id="aromaRating" max="5">
+            <h3 id="foodRating">Rating :</h3>
         </div>
+        <!-- about service -->
+        <div class="service">
+            <h2>Rating on Service</h2>
+            <label for="service">Servicing</label>
+            <input type="number" value="0" id="waiter" max="5">
+            <h3 id="ServiceRating">Service Rating :</h3>
+        </div>
+        <!-- about Restaurent Hygene and maintainance -->
+        <div class="hygene">
+            <h2>Rating Staff & Restaurent Hygene</h2>
+            <label for="waiterHygene">Staff :</label>
+            <input type="number" value="0" id="staffHygene" max="5">
+            <label for="overallmaintainance">Overall Look and Atmosphere :</label>
+            <input type="number" value="0" id="overallLook" max="5">
+            <h3 id="HygeneRating">Rating on Hygene :</h3>
+        </div>
+        <!-- food bill -->
+        <h2 class="billAmount">Overall Bill INR</h2>
+        <label for="bill">Enter Bill Amount</label>
+        <input type="number" value="0" id="billAmount">
+        <!-- tip amount -->
+        <div class="tip-Amount">
+            <h2 id="tipAmount">Tip Amount : </h2>
+        </div>
+        <!-- event handler -->
+        <input class="btnTip" type="button" value="GetTip" onclick="getRating()">
     </div>
     <script src="script.js"></script>
 </body>
