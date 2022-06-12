@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.clock{
+    border: 2px solid white;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
+    position: relative;
+}
+.sec{
+    border: 1px solid white;
+    background-color: aliceblue;
+    height: 19vh;
+    width: 0.25vh;
+    position: absolute;
+    align-items: center;
+}
+.min{
+    border: 1px solid white;
+    background-color: aliceblue;
+    height: 22vh;
+    width: 0.5vh;
+    position: absolute;
+    align-items: center;
+}
+.hour{
+    border: 1px solid white;
+    background-color: aliceblue;
+    height: 15vh;
+    width: 0.75vh;
+    position: absolute;
+    align-items: center;
+}
