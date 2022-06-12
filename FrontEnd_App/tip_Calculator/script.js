@@ -3,7 +3,7 @@ function getRating(){
     const color = parseInt(document.getElementById("colorRating").value);
     const aroma = parseInt(document.getElementById("aromaRating").value);
     const avg = (taste+color+aroma)/3;
-    document.getElementById("foodRating").innerHTML = "Rating : " + avg;
+    document.getElementById("foodRating").innerHTML = "Food Rating : " + avg;
 
     // servicing
     const service = parseInt(document.getElementById("waiter").value);
@@ -19,7 +19,7 @@ function getRating(){
     const finalRating = parseInt((avg+service+overall)/3);
 
     // print rating
-    document.getElementById("rating").innerHTML = "Rating : " + finalRating;
+    document.getElementById("rating").innerHTML = "Overall Rating : " + finalRating;
     
     // bill amount
     const bill = parseInt(document.getElementById("billAmount").value);
@@ -28,14 +28,14 @@ function getRating(){
     //final tip
     if(finalRating > 3)
     {
-        document.getElementById("tipAmount").innerHTML = "Tip Amount : " + (bill*(3/100));
+        document.getElementById("tipAmount").innerHTML = "Tip Amount : " + (bill*(1/100));
     }
     else if(finalRating >= 2 && finalRating < 4)
     {
-        document.getElementById("tipAmount").innerHTML = "Tip Amount : " + (bill*(2/100));
+        document.getElementById("tipAmount").innerHTML = "Tip Amount : " + (bill*(0.5/100));
     }
     else
     {
-        document.getElementById("tipAmount").innerHTML = "Tip Amount : " + (bill*(1/100));
+        document.getElementById("tipAmount").innerHTML = "Tip Amount : " + (bill*(0.25/100));
     }
 }

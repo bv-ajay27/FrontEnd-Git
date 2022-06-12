@@ -9,38 +9,39 @@
 </head>
 <body>
     <div class="container">
+        <p style="position: -webkit-sticky;">Rating 1 - 5</p>
         <!-- About food color and taste -->
         <div class="foodContainer">
             <h2>Rating on Food</h2>
             <label for="foodTaste">Taste :</label>
-            <input type="number" value="4" id="tasteRating" max="5">
+            <input type="number" id="tasteRating" max="5" placeholder="0-5">
             <label for="foodColor">Color :</label>
-            <input type="number" value="4" id="colorRating" max="5">
+            <input type="number" id="colorRating" max="5" placeholder="0-5">
             <label for="foodAroma">Aroma :</label>
-            <input type="number" value="4" id="aromaRating" max="5">
+            <input type="number" id="aromaRating" max="5" placeholder="0-5">
             <h3 id="foodRating">Rating :</h3>
         </div>
         <!-- about service -->
         <div class="service">
             <h2>Rating on Service</h2>
             <label for="service">Servicing</label>
-            <input type="number" value="4" id="waiter" max="5">
+            <input type="number" id="waiter" max="5" placeholder="0-5">
             <h3 id="ServiceRating">Service Rating :</h3>
         </div>
         <!-- about Restaurent Hygene and maintainance -->
         <div class="hygene">
             <h2>Rating Staff & Restaurent Hygene</h2>
             <label for="waiterHygene">Staff :</label>
-            <input type="number" value="4" id="staffHygene" max="5">
+            <input type="number" id="staffHygene" max="5" placeholder="0-5">
             <label for="overallmaintainance">Overall Look and Atmosphere :</label>
-            <input type="number" value="4" id="overallLook" max="5">
+            <input type="number" id="overallLook" max="5" placeholder="0-5">
             <h3 id="HygeneRating">Rating on Hygene :</h3>
         </div>
         <!-- food bill -->
         <h3 id="rating">Overall Rating</h3>
-        <h2 class="billAmount">Overall Bill in INR</h2>
+        <h2 class="billAmount">Bill in INR</h2>
         <label for="bill">Enter Bill Amount</label>
-        <input type="number" value="0" id="billAmount">
+        <input type="number" id="billAmount" placeholder="Amount in Rupees">
         <!-- tip amount -->
         <div class="tip-Amount">
             <h2 id="tipAmount">Tip Amount : </h2>
