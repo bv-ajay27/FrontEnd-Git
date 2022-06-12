@@ -6,6 +6,7 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+    margin: 10vh auto;
 }
 .clock{
     border: 2px solid white;
@@ -16,25 +17,26 @@ body{
 }
 .sec{
     border: 1px solid white;
-    background-color: aliceblue;
-    height: 19vh;
-    width: 0.25vh;
-    position: absolute;
-    align-items: center;
+    height: 0.2vh;
+    width: 20vh;
 }
 .min{
-    border: 1px solid white;
-    background-color: aliceblue;
-    height: 22vh;
-    width: 0.5vh;
-    position: absolute;
-    align-items: center;
+    background-color: rgb(56, 145, 223);
+    height: 0.8vh;
+    width: 23vh;
 }
 .hour{
-    border: 1px solid white;
-    background-color: aliceblue;
-    height: 15vh;
-    width: 0.75vh;
-    position: absolute;
-    align-items: center;
+    background-color: rgb(239, 241, 239);
+    height: 0.8vh;
+    width: 15vh;
 }
+.hand {
+    border-radius: 3px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform-origin: 5%;
+    transform: rotate(90deg);
+    transition: all s;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1)
+  }
