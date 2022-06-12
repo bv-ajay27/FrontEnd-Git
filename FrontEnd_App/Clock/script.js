@@ -19,7 +19,6 @@ function time(){
     const hourDeg = ((hour / 12) * 360) + ((min/60)*30) + 90;
     hourHand.style.transform = `rotate(${hourDeg}deg)`;
 }
-
 setInterval(time,1000);
 
 time();
