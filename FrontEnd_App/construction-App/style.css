@@ -72,9 +72,10 @@ section{
 }
 
 .header{
-    position:fixed;
+    position:sticky;
+    /* margin: auto; */
     top: 0; left: 0; right: 0;
-    z-index: 1000; 
+    z-index: 100; 
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +108,7 @@ section{
     height: 4.5rem;
     width: 4.5rem;
     line-height: 4.5rem;
-    border-radius: .5rem;
+    border-radius: 50%;
     background: #eee;
     color:var(--black);
     font-size:2rem;
@@ -140,7 +141,7 @@ section{
 }
 
 .header .search-form.active{
-    right:2rem;
+    right:1rem;
     transition: .4s linear;
 }
 
@@ -150,7 +151,8 @@ section{
     background: none;
     text-transform: none;
     font-size: 1.6rem;
-    color:var(--black);
+    font-weight: bolder;
+    color:var(--orange);
     padding:0 1.5rem;
 }
 
