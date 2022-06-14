@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+        <h3>Temperature converter</h3>
         <div class="converter">
             <label for="input">Temperature :</label>
             <input type="number" value="" id="Temp" required>
@@ -19,13 +20,13 @@
             </select>
             <h2>To</h2>
             <select id="UnitConvert">
-                <option value="celsius">Celsius &deg;C</option>
-                <option value="Fahrenheit">Fahrenheit &deg;F</option>
-                <option value="Kelvin">Kelvin &deg;K</option>
+                <option value="celsius">Celsius&deg;C</option>
+                <option value="Fahrenheit">Fahrenheit&deg;F</option>
+                <option value="Kelvin">Kelvin&deg;K</option>
             </select>
             <button type="submit" onclick="convert()">Convert</button>
         </div>
-        <div >OutPut :<p id="outputTemp"></p></div>
+        <div class="output">OutPut :<span id="outputTemp"></span></div>
     </div>
     <script src="script.js"></script>
 </body>
