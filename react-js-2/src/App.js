@@ -1,6 +1,6 @@
 import './App.css';
 import ChildComp1 from './components/ChildComp1/ChildComp1';
-import ChildComp2 from './components/ChildComp2';
+import ChildComp2 from './components/childComp2/ChildComp2';
 
 function App() {
   return (

@@ -11,3 +11,8 @@
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.SubChildComp1{
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+}

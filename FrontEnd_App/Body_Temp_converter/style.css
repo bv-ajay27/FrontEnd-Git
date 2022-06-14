@@ -9,22 +9,24 @@ body{
 .container{
     border: 1px solid rgb(36, 36, 240);
     background-image:url(images/background.png);
+    background-size: cover;
     background-position: center;
-    justify-content: center;
     background-repeat: no-repeat;
-    height: 60vh;
-    width: 500px;
-    position: relative;
-}
-.list ul{
-    margin: 15vh 0px 0px 0px;
+    width: 100vh;
+    height: max-content;
+    padding: 5px 1px;
+    border-radius: 10px;
 }
 .converter{
-    border: 1px solid red;
-    width: 150px;
-    height: auto;
-    position: absolute;
-    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(234, 241, 241);
+    font-weight: bolder;
+    border: 3px solid #f1f1f1;
+    margin: 7px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 5px;
+    overflow: hidden;
 }
 input{
     width: 100px;

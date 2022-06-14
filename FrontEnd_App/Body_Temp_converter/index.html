@@ -5,36 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Temperas</title>
+    <title>Temp</title>
 </head>
 <body>
     <div class="container">
-        <div class="list">
-            <ul>
-                <li>Celcius</li>
-                <li>Fahrenheit</li>
-                <li>Kelvin</li>
-            </ul>
-        </div>
         <div class="converter">
-            <!-- <form action="temp" method="get"> -->
-                <label for="input">Temperature :</label>
-                <input type="text" value="0" id="Temp">
-                <select>
-                    <option value="celcius">&deg;C</option>
-                    <option value="Fahrenheit">&deg;F</option>
-                    <option value="Kelvin">&deg;K</option>
-                </select>
-                <br>
-                <button>Convert</button>
-                <br>
-                <label for="output">Output</label>
-                <input type="text">
-            <!-- </form> -->
+            <label for="input">Temperature :</label>
+            <input type="number" value="" id="Temp" required>
+            <select id="unit">
+                <option value="celsius">Celsius &deg;C</option>
+                <option value="Fahrenheit">Fahrenheit &deg;F</option>
+                <option value="Kelvin">Kelvin &deg;K</option>
+            </select>
+            <h2>To</h2>
+            <select id="UnitConvert">
+                <option value="celsius">Celsius &deg;C</option>
+                <option value="Fahrenheit">Fahrenheit &deg;F</option>
+                <option value="Kelvin">Kelvin &deg;K</option>
+            </select>
+            <button type="submit" onclick="convert()">Convert</button>
         </div>
-        <div id="outputTemp"></div>
-        <!-- <p id="demo">Hello </p>
-        <button onclick="changePara()">changePara</button> -->
+        <div >OutPut :<p id="outputTemp"></p></div>
     </div>
     <script src="script.js"></script>
 </body>
