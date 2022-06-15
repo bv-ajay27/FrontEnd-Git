@@ -4,7 +4,9 @@
 body{
     justify-content: center;
     align-items: center;
+    display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
 }
 .container{
     border: solid 6px transparent;
@@ -14,23 +16,23 @@ body{
     background-origin: border-box;
     background-clip: content-box, border-box;
     border-radius: 5px;
-    height: 60vh;
-    width: 100vh;
-    margin: 10vh auto;
+    height: min-content;
+    width: 90vh;
     overflow: hidden;
 }
 #question{
     text-align: center;
-    padding-top: 2vh;
+    padding: 3em;
+    border: 1px solid skyblue;
+    box-shadow: 1px 1px 7px 7px gainsboro;
+    margin: 5vh 8vh;
+    border-radius: 5px;
 }
-.optionDiv{
-    margin: auto;
-    margin: 7vh 10vh;
-}
-ul{
+ul,li{
     list-style: none;
+    padding: 4px 8px;
 }
-div input{
+div button{
     border: 5px solid green;
     background-color: rgba(2, 109, 2, 0.9);
     width: 100%;
@@ -38,7 +40,7 @@ div input{
     text-align: center;
     border-radius: 1.5px;
 }
-div input:hover{
+button:hover{
     background-color: rgb(2, 109, 2);
     opacity: 100;
 }
