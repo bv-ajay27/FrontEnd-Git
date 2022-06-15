@@ -64,3 +64,15 @@ label{
     border-radius: 20px;
     border-color: #414cec;
 }
+@media only screen and (max-width: 600px){
+    input{
+        border-radius: 10px;
+        border-color: rgb(23, 24, 24);
+        /* height: 30px;
+        width: 120px; */
+        color: rgb(240, 10, 29);
+        /* font-weight: 600;
+        font-size: 50px; */
+        background-color: #414cec;
+    }
+}

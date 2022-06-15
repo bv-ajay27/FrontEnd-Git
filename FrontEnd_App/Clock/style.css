@@ -36,7 +36,7 @@ body{
     top:50%;
     left: 48%;
     transform-origin: 7%;
-    transform: rotate(360deg);
+    transform: rotate(180deg);
     transition: all 0.1s;
-    transition-timing-function: cubic-bezier(0.4, 0, 1, 1)
+    /* transition-timing-function: cubic-bezier(0.4, 0, 1, 1) */
   }
