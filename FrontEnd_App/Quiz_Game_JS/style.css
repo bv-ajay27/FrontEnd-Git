@@ -22,7 +22,7 @@ body{
 }
 #question{
     text-align: center;
-    padding: 3em;
+    padding: 2em;
     border: 1px solid skyblue;
     box-shadow: 1px 1px 7px 7px #dcdcdc;
     margin: 5vh 8vh;
@@ -51,4 +51,8 @@ button:hover{
     color: #dcdcdc;
     box-shadow: 1px 1px 6px 7px skyblue;
     opacity: 100;
+}
+span{
+    color: red;
+    font-size: small;
 }

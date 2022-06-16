@@ -1,6 +1,6 @@
 const quizData = [
     {
-        question : "Which language is a Platform independent?",
+        question : "Which language is Platform Independent?",
         a: "Java",
         b: "JS",
         c: "React",
@@ -8,41 +8,41 @@ const quizData = [
         correct:"a",
     },
     {
-        question : "Which language is a Platform independent?",
-        a: "Java",
-        b: "JS",
-        c: "React",
-        d:"Python",
+        question : "Number of primitive data types in Java are?",
+        a: "1",
+        b: "4",
+        c: "9",
+        d:"8",
+        correct:"d",
+    },
+    {
+        question : "What is the size of float and double in java?",
+        a: "4 and 16",
+        b: "16 and 32",
+        c: "32 and 64",
+        d:"64 and 64",
+        correct:"c",
+    },
+    {
+        question : "When is the object created with new keyword?",
+        a: "At RunTime",
+        b: "At Compile Time",
+        c: "At intisiation",
+        d:"No memory created",
         correct:"a",
     },
     {
-        question : "Which language is a Platform independent?",
-        a: "Java",
-        b: "JS",
-        c: "React",
-        d:"Python",
-        correct:"a",
-    },
-    {
-        question : "Which language is a Platform independent?",
-        a: "Java",
-        b: "JS",
-        c: "React",
-        d:"Python",
-        correct:"a",
-    },
-    {
-        question : "Which language is a Platform independent?",
-        a: "Java",
-        b: "JS",
-        c: "React",
-        d:"Python",
+        question : "To which of the following does the class string belong to.",
+        a: "Java.lang",
+        b: "Java.awt",
+        c: "Java.util",
+        d:"java.string",
         correct:"a",
     },
 ];
 const quiz = document.getElementById("quiz")
-const ansEle = document.querySelectorAll(".optionDiv")
-const question = document.getElementById('question')
+const ansEle = document.querySelectorAll(".option")
+const question = document.getElementById("question")
 
 const submitBtn = document.getElementById("submit")
 
@@ -51,13 +51,14 @@ const b_text = document.getElementById("b_text")
 const c_text = document.getElementById("c_text")
 const d_text = document.getElementById("d_text")
 
-const currQuesInd = 0;
+let currQuesInd = 0;
 
 function deselectAnswers(){
     ansEle.forEach(ans => ans.checked = false)
 }
 
 function nextQuestion(){
+
     deselectAnswers()
 
     const currentQuesData = quizData[currQuesInd]
@@ -72,7 +73,7 @@ function nextQuestion(){
 
 nextQuestion()
 
-let score = 0
+let score = 0;
 
 function selectAns(){
     let answer;
@@ -80,7 +81,7 @@ function selectAns(){
     ansEle.forEach(ans=>{
         if(ans.checked)
         {
-            answer = ans
+            answer = ans.id
         }
     })
     return answer;
@@ -94,6 +95,9 @@ submitBtn.addEventListener("click",()=>{
         {
             score++;
         }
+        // else{
+        //     document.getElementById("rightAns").innerHTML = quizData[currQuesInd].correct;
+        // }
         currQuesInd++;
         if(currQuesInd < quizData.length)
         {
