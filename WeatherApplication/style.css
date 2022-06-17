@@ -21,7 +21,7 @@ body{
   width: 400px;
   background: #fff;
   border-radius: 7px;
-  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 7px 7px 10px 12px rgba(0, 0, 0, 0.05);
 }
 .wrapper header{
   display: flex;
@@ -44,7 +44,7 @@ header i{
 .wrapper .input-part{
   margin: 20px 25px 30px;
 }
-.wrapper.active .input-part{
+.wrapper.active .input-part{ /*to see */
   display: none;
 }
 .input-part .info-txt{
@@ -62,12 +62,12 @@ header i{
   border: 1px solid #f5c6cb;
 }
 .input-part .info-txt.pending{
-  color: #0c5460;
+  color: #067be7;
   display: block;
-  background: #d1ecf1;
+  background: #80b5e6;
   border: 1px solid #bee5eb;
 }
-.input-part :where(input, button){
+.input-part :where(input, button){ /* need to see*/
   width: 100%;
   height: 55px;
   border: none;
@@ -80,17 +80,18 @@ header i{
   padding: 0 15px;
   border: 1px solid #ccc;
 }
+/* need to see*/
 .input-part input:is(:focus, :valid){
   border: 2px solid #43AFFC;
 }
 .input-part input::placeholder{
-  color: #bfbfbf;
+  color: #464141;
 }
 .input-part .separator{
   height: 1px;
   width: 100%;
   margin: 25px 0;
-  background: #ccc;
+  background: rgb(177, 198, 216);
   position: relative;
   display: flex;
   align-items: center;
@@ -98,7 +99,7 @@ header i{
 }
 .separator::before{
   content: "or";
-  color: #b3b3b3;
+  color: #046dcf;
   font-size: 19px;
   padding: 0 15px;
   background: #fff;
@@ -106,8 +107,8 @@ header i{
 .input-part button{
   color: #fff;
   cursor: pointer;
-  background: #43AFFC;
-  transition: 0.3s ease;
+  background: #64b7f3;
+  transition: 0.4s ease;
 }
 .input-part button:hover{
   background: #1d9ffc;
@@ -124,8 +125,9 @@ header i{
   display: flex;
 }
 .weather-part img{
-  max-width: 170px;
+  max-width: 180px;
   height: 120px;
+  padding: 0px;
 }
 .weather-part .temp{
   display: flex;
@@ -137,7 +139,7 @@ header i{
 }
 .weather-part .temp .deg{
   font-size: 40px;
-  display: block;
+  /* display: block; */
   margin: 10px 5px 0 0;
 }
 .weather-part .weather{
@@ -181,7 +183,7 @@ header i{
   margin-left: 3px;
 }
 .details .temp, .humidity span{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   margin-top: -3px;
 }

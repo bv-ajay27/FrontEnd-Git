@@ -9,8 +9,8 @@ arrowBack = wrapper.querySelector("header i");
 
 let api;
 
-inputField.addEventListener("keyup", e =>{
-    if(e.key == "Enter" && inputField.value != ""){
+inputField.addEventListener("keyup", enter =>{
+    if(enter.key == "Enter" && inputField.value != ""){
         requestApi(inputField.value);
     }
 });
@@ -55,6 +55,7 @@ function weatherDetails(info){
     }else{
         const city = info.name;
         const country = info.sys.country;
+        // const time = info.time;
         const {description, id} = info.weather[0];
         const {temp, feels_like, humidity} = info.main;
 
