@@ -30,13 +30,13 @@ body{
     height: 0.8vh;
     width: 15vh;
 }
-.hand {
+.hand {   
     border-radius: 3px;
     position: absolute;
     top:50%;
     left: 47%;
-    transform-origin: 8%;
-    /* transform: rotate(360deg); */
+    transform-origin: 7%;
+    transform: rotate(90deg);
     transition: all 0.1s;
-    transition-timing-function: cubic-bezier(0.4, 0, 1, 1)
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); 
   }
