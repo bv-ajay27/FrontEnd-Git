@@ -2,8 +2,26 @@
     box-sizing: border-box;
     margin: 0;
 }
+button{
+    padding: 5px;
+    border-color: #0b99eb;
+    background-color: white;
+    color: #000;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: #0b99eb;
+    color: white; 
+    font-weight: 700
+}
+input:active{
+    border-color: #0b99eb;
+}
 .header {
     background-color: #70bde9;
+    /* position: fixed; */
+    width: 100%;
+    /* z-index: 1; */
     
 }
 .header a{
@@ -29,23 +47,22 @@
 sub{
     font-size: xx-small;
 }
-ul {
+.container ul {
     margin: 0;
     padding: 0;
     width: 18%;
     background-color: #c7e1f0;
     position: fixed;
     height: 100%;
-    overflow: auto;
+    /* overflow: auto; */
 }
-  
 li a {
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
 }
-li a.active {
+li a:active {
     background-color: #0b99eb;
     color: white;
   }
@@ -62,6 +79,7 @@ li a:hover:not(.active) {
 h2{
     text-align: center;
     padding: 10px 2px;
+    text-transform: capitalize;
 }
 #Home-content{
     background-image: url(images/const\ cover.webp);
@@ -70,3 +88,22 @@ h2{
     background-position: center;
     padding: 5rem;
 }
+/* CCM */
+.ccm{
+    /* display: none; */
+}
+.steelCal{
+    position: relative;
+    background-image: url(images/steelCal.JPG);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+/* .steelCal img{
+    position: absolute;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+} */
