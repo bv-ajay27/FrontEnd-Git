@@ -3,6 +3,7 @@ import ChildComp1 from "./component-1/ChildComp1"
 import ChildComp2 from './component-2/ChildComp2'
 import SubChildComp1 from './component-1/SubChildComp1';
 import SubChildComp2 from './component-2/SubChildComp2';
+import BulbOnOff from './component-1/BulbOnOff';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <hr></hr>
       <hr></hr>
       <SubChildComp2/>
+      <BulbOnOff/>
     </div>
   );
 }
