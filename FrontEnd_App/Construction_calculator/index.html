@@ -10,10 +10,12 @@
 <body>
     <div class="header">
         <!-- <a href="#">Construct</a> -->
-        <p>Quantity Estimator <sub>by Construct</sub></p>
+        <p>Quantity Estimator <sub>by Construct...</sub></p>
     </div>
     <div class="container">
         <ul class="navBar">
+            <p class="construct-app">Construct</p>
+            <!-- <li class="construct-app"><a href="">Construct</a></li> -->
             <li><a href="#Home">Home</a></li>
             <li><a href="#CCM">Concrete Calculator</a></li>
             <li><a href="#soil">Top soil Calculator</a></li>
@@ -27,15 +29,15 @@
             <div id="Home-content">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id enim nemo minima velit eius. Pariatur eos aliquid ab. Nisi fuga vitae recusandae a rerum adipisci corrupti dignissimos laudantium ipsa delectus consequatur maiores neque repudiandae voluptate aperiam molestias quam laboriosam minima deserunt quos alias eligendi, modi quia odit? Dolorem officiis rem dolore molestiae magnam harum esse, vero autem. Delectus voluptates dolore quod accusantium, provident quos minima ipsam totam qui, eaque similique ducimus ut nulla saepe? Repellendus unde illo quod nostrum quidem maxime ipsum iste est esse quos sit vero quasi laboriosam enim aliquam cupiditate suscipit, explicabo laborum? Maxime magni obcaecati dolores.
             </div>
+            <h2 >Concrete Calculator</h2>
+            <br>
             <div id="CCM" class="ccm">
-                <h2 >Concrete Calculator</h2>
-                <br>
                 <h3>CEMENT CONCRETE CALCULATION</h3>
                 <br>
                 <label for="unit">Unit of measurement :</label>
                 <br>
                 <!-- <input type="text" name="" id="unit"> -->
-                <select name="measurement" id="unitMeasure">
+                <select name="measurement" id="unitMeasureCCM">
                     <option value="Feet/Inch">Feet/Inch</option>
                     <option value="Meter/Cm">Meter/Cm</option>
                 </select>
@@ -53,20 +55,20 @@
                 <!-- Measuremnet input length -->
                 <label for="Length">Length</label>
                 <br>
-                <input type="number" name="" id="Length" placeholder="Length" >
-                <input type="number" name="" id="LengthDec" placeholder="Decimal Length">
+                <input type="number" name="" id="LengthCCM" placeholder="Length" >
+                <input type="number" name="" id="LengthCCMDec" placeholder="Decimal Length">
                 <br>
                 <!-- Measuremnet input length -->
                 <label for="width">Width :</label>
                 <br>
-                <input type="number" name="" id="Width" placeholder="Width">
-                <input type="number" name="" id="WidthDec" placeholder="Decimal Width">
+                <input type="number" name="" id="WidthCCM" placeholder="Width">
+                <input type="number" name="" id="WidthCCMDec" placeholder="Decimal Width">
                 <br>
                 <!-- Measuremnet input length -->
                 <label for="Depth">Depth</label>
                 <br>
-                <input type="number" name="" id="Depth" placeholder="Width">
-                <input type="number" name="" id="WidthDec" placeholder="Decimal Depth">
+                <input type="number" name="" id="DepthCCM" placeholder="Width">
+                <input type="number" name="" id="DepthCCMDec" placeholder="Decimal Depth">
                 <br>
                 <br>
                 <button onclick="ccm()">Calculate</button>
@@ -75,10 +77,9 @@
             <br>
 
             <!-- Top Soil Calculator -->
-
+            <h2>Top Soil Calculator</h2>
+            <br>
             <div id="soil" class="soilCal">
-                <h2>Top Soil Calculator</h2>
-                <br>
                 <h3>Soil Quantity_Estimator</h3>
                 <br>
                 <label for="unit">Unit of measurement :</label>
@@ -111,10 +112,9 @@
             </div>
             
             <!-- Bricks Quantity -->
-            
+            <h2>Bricks Quantity</h2>
+            <br>
             <div id="Bricks">
-                <h2>Bricks Quantity</h2>
-                <br>
                 <h3>Bricks Quantity</h3>
                 <br>
                 <label for="unit">Unit of measurement :</label>
