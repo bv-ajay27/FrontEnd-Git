@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/backgrnd-red.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+}
+.container{
+    border: solid 5px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(150, 230, 174), rgb(150, 210, 238)), 
+      linear-gradient(315deg,#414cec,#ebe4e6 50%,#0cda27);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 8px;
+    height: 112vh;
+    width: 120vh;
+    margin: 10vh 5vh;
+    overflow: hidden;
+}
+.foodContainer, 
+.service,
+.hygene{
+    margin-left: 3vh;
+}
+h2{
+    background-color: rgb(247, 137, 82);
+    color: rgb(10, 6, 3);
+    max-width: fit-content;
+    padding: 0.5px 8px;
+    border-radius: 5px;
+    border-style: ridge;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    border-radius: 3px;
+    border-color: rgb(8, 180, 248);
+    height: 30px;
+    width: 120px;
+    color: rgb(76, 13, 78);
+    font-weight: 600;
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+    color: rgb(97, 4, 4);
+    border-radius: 8px;
+    padding: 0.5px 8px;
+    font-weight: 600;
+}
+.btnTip{
+    border: 2px solid rgb(65, 85, 35);
+    padding: 4px;
+    border-radius: 10px;
+    height: auto;
+    margin-left: 90vh;
+    color: black;
+}
+.btnTip:hover{
+    background-color: rgb(240, 247, 240);
+    color: rgb(18, 20, 22);
+    border-radius: 20px;
+    border-color: #414cec;
+}
+@media only screen and (max-width: 600px){
+    input{
+        border-radius: 10px;
+        border-color: rgb(23, 24, 24);
+        /* height: 30px;
+        width: 120px; */
+        color: rgb(240, 10, 29);
+        /* font-weight: 600;
+        font-size: 50px; */
+        background-color: #414cec;
+    }
+}
