@@ -38,7 +38,6 @@
                 <br>
                 <!-- <input type="text" name="" id="unit"> -->
                 <select name="measurement" id="unitMeasureCCM">
-                    <option value="Feet/Inch">Feet/Inch</option>
                     <option value="Meter/Cm">Meter/Cm</option>
                 </select>
                 <br>
@@ -46,29 +45,29 @@
                 <br>
                 <!-- grade of cement mixture -->
                 <select name="CCGrade" id="CCGrade">
-                    <option value="Mixture">M-20(1:1.5:3)</option>
-                    <option value="Mixture">M-15(1:2:4)</option>
-                    <option value="Mixture">M-10(1:3:6)</option>
-                    <option value="Mixture">M-7.5(1:4:8)</option>
+                    <option value="M-20">M-20(1:1.5:3)</option>
+                    <option value="M-15">M-15(1:2:4)</option>
+                    <option value="M-10">M-10(1:3:6)</option>
+                    <option value="M-7.5">M-7.5(1:4:8)</option>
                 </select>
                 <br>
                 <!-- Measuremnet input length -->
                 <label for="Length">Length</label>
                 <br>
                 <input type="number" name="" id="LengthCCM" placeholder="Length" >
-                <input type="number" name="" id="LengthCCMDec" placeholder="Decimal Length">
+                <input type="number" name="" id="LengthCCMDec" placeholder="Decimal Length" value="0.0">
                 <br>
                 <!-- Measuremnet input length -->
                 <label for="width">Width :</label>
                 <br>
                 <input type="number" name="" id="WidthCCM" placeholder="Width">
-                <input type="number" name="" id="WidthCCMDec" placeholder="Decimal Width">
+                <input type="number" name="" id="WidthCCMDec" placeholder="Decimal Width" value="0.0">
                 <br>
                 <!-- Measuremnet input length -->
                 <label for="Depth">Depth</label>
                 <br>
                 <input type="number" name="" id="DepthCCM" placeholder="Width">
-                <input type="number" name="" id="DepthCCMDec" placeholder="Decimal Depth">
+                <input type="number" name="" id="DepthCCMDec" placeholder="Decimal Depth" value="0.0">
                 <br>
                 <br>
                 <button onclick="ccm()">Calculate</button>
@@ -84,9 +83,7 @@
                 <br>
                 <label for="unit">Unit of measurement :</label>
                 <br>
-                <!-- <input type="text" name="" id="unit"> -->
                 <select name="measurement" id="unitMeasure">
-                    <option value="Feet/Inch">Feet/Inch</option>
                     <option value="Meter/Cm">Meter/Cm</option>
                 </select>
                 <br>
@@ -94,17 +91,17 @@
                 <!-- Measuremnet input length -->
                 <label for="Length">Length</label>
                 <br>
-                <input type="number" name="" id="Length" placeholder="Length" required="number">
+                <input type="number" name="" id="LengthSoil" placeholder="Length" required="number">
                 <br>
-                <!-- Measuremnet input length -->
+                <!-- Measuremnet input Width -->
                 <label for="width">Width :</label>
                 <br>
-                <input type="number" name="" id="Width" placeholder="Width">
+                <input type="number" name="" id="WidthSoil" placeholder="Width">
                 <br>
-                <!-- Measuremnet input length -->
+                <!-- Measuremnet input Depth -->
                 <label for="Depth">Depth</label>
                 <br>
-                <input type="number" name="" id="Depth" placeholder="Width">
+                <input type="number" name="" id="DepthSoil" placeholder="Width">
                 <br>
                 <br>
                 <button onclick="soilCal()">Calculate</button>
@@ -120,7 +117,6 @@
                 <label for="unit">Unit of measurement :</label>
                 <br>
                 <select name="measurement" id="unitMeasure">
-                    <option value="Feet/Inch">Feet/Inch</option>
                     <option value="Meter/Cm">Meter/Cm</option>
                 </select>
                 <br>
@@ -142,6 +138,7 @@
                 <br>
                 <br>
                 <h4>Size of Brick</h4>
+                <p>unitMeasure 'cm'</p>
                 <!-- size of brick -->
                 <label for="Length">Length</label>
                 <br>
@@ -155,7 +152,7 @@
                 <!-- Measuremnet input length -->
                 <label for="Depth">Wall Thickness</label>
                 <br>
-                <input type="number" name="" id="Thickness" placeholder="Wall Thickness">
+                <input type="number" name="" id="brickThickness" placeholder="Wall Thickness">
                 <br>
                 <br>
                 <button onclick="BricksQTY()">Calculate</button>
@@ -174,7 +171,6 @@
                 <br>
                 <!-- <input type="text" name="" id="unit"> -->
                 <select name="measurement" id="unitMeasureOfSteel">
-                    <option value="Feet/Inch">Feet/Inch</option>
                     <option value="Meter/Cm">Meter/Cm</option>
                 </select>
                 <br>
@@ -185,7 +181,7 @@
                 <input type="number" name="" id="Dia" placeholder="Diameter in mm" required="number">
                 <br>
                 <!-- Measuremnet input length -->
-                <label for="width">Length :</label>
+                <label for="length">Length :</label>
                 <br>
                 <input type="number" name="" id="LengthSteelRod" placeholder="Length">
                 <br>
