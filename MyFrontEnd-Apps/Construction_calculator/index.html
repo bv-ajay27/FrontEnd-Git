@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Quantity_Estimator</title>
 </head>
 <body>
@@ -14,8 +15,9 @@
     </div>
     <div class="container">
         <ul class="navBar">
-            <p class="construct-app">Construct</p>
-            <!-- <li class="construct-app"><a href="">Construct</a></li> -->
+            <p class="construct-app"><a href=#construct-app>Construct 
+                <i class="fa-duotone fa-circle-left"></i></a>
+            </p>
             <li><a href="#Home">Home</a></li>
             <li><a href="#CCM">Concrete Calculator</a></li>
             <li><a href="#soil">Top soil Calculator</a></li>
@@ -70,7 +72,7 @@
                 <input type="number" name="" id="DepthCCMDec" placeholder="Decimal Depth" value="0.0">
                 <br>
                 <br>
-                <button onclick="ccm()">Calculate</button><br>
+                <button onclick="ccm()">Calculate</button><br><br>
                 <span id="CCMVolOutput"></span><br>
                 <span id="CCMWetVolOutput"></span><br>
                 <span id="CCMCementOutput"></span><br>
@@ -109,7 +111,7 @@
                 <input type="number" name="" id="DepthSoil" placeholder="Width">
                 <br>
                 <br>
-                <button onclick="soilCal()">Calculate</button>
+                <button onclick="soilCal()">Calculate</button><br><br>
                 <span id="TopSoilOutput"></span>
             </div>
             
@@ -150,17 +152,17 @@
                 <input type="number" name="" id="brickLength" placeholder="Length of Brick">
                 <br>
                 <!-- Measuremnet input length -->
-                <label for="width">Height/Depth :</label>
+                <label for="width">Height :</label>
                 <br>
                 <input type="number" name="" id="bricksHeight" placeholder="Width">
                 <br>
                 <!-- Measuremnet input length -->
-                <label for="Depth">Wall Thickness</label>
+                <label for="Depth">Width :</label>
                 <br>
                 <input type="number" name="" id="brickThickness" placeholder="Wall Thickness">
                 <br>
                 <br>
-                <button onclick="BricksQTY()">Calculate</button>
+                <button onclick="BricksQTY()">Calculate</button><br><br>
                 <span id="BricksOutput"></span>
             </div>
 
@@ -197,7 +199,7 @@
                 <br>
                 <br>
                 <!-- <img src="images/steelCal.JPG" alt="steelCalculator-Img" class="steelCalImg"> -->
-                <button onclick="SteelQTY()">Calculate</button>
+                <button onclick="SteelQTY()">Calculate</button><br><br>
                 <span id="steelQTYOutput"></span>
             </div>
         </div>
