@@ -38,7 +38,11 @@ function ccm(){
         const aggTon = (agg*1350)/1000;
 
         //output
-        document.getElementById("CCMOutput") .innerHTML = "Cement concrete mixture vol =" + cement.toFixed(2);
+        document.getElementById("CCMVolOutput") .innerHTML = "Cement concrete mixture vol =" + ccmVol.toFixed(2);
+        document.getElementById("CCMWetVolOutput") .innerHTML = "Cement concrete mixture Wet vol =" + wetCCMVol.toFixed(2);document.getElementById("CCMCementOutput") .innerHTML = "Cement Quantity =" + cement.toFixed(2);
+        document.getElementById("CCMNoOfBagsOutput") .innerHTML = "No.of Cement Bags Required =" + CementBags.toFixed(2);
+        document.getElementById("sandOutput") .innerHTML = "Volume of Sand Required (in Tonn) =" + sandTon.toFixed(2);
+        document.getElementById("aggOutput") .innerHTML = "Volume of Aggeregate Required (in Tonn) =" + aggTon.toFixed(2);
     }
     else if(unit == "M-15")
     {
@@ -62,7 +66,11 @@ function ccm(){
         const aggTon = (agg*1350)/1000;
 
         //output
-        document.getElementById("CCMOutput") .innerHTML = "Cement concrete mixture vol ="+ cement.toFixed(2);
+        document.getElementById("CCMVolOutput") .innerHTML = "Cement concrete mixture vol =" + ccmVol.toFixed(2);
+        document.getElementById("CCMWetVolOutput") .innerHTML = "Cement concrete mixture Wet vol =" + wetCCMVol.toFixed(2);document.getElementById("CCMCementOutput") .innerHTML = "Cement Quantity =" + cement.toFixed(2);
+        document.getElementById("CCMNoOfBagsOutput") .innerHTML = "No.of Cement Bags Required =" + CementBags.toFixed(2);
+        document.getElementById("sandOutput") .innerHTML = "Volume of Sand Required (in Tonn) =" + sandTon.toFixed(2);
+        document.getElementById("aggOutput") .innerHTML = "Volume of Aggeregate Required (in Tonn) =" + aggTon.toFixed(2);
     }
     else if(unit == "M-10")
     {
@@ -86,8 +94,12 @@ function ccm(){
         const aggTon = (agg*1350)/1000;
 
         //output
-        document.getElementById("CCMOutput") .innerHTML = "Cement concrete mixture vol =" +cement.toFixed(2);
-    }
+        document.getElementById("CCMVolOutput") .innerHTML = "Cement concrete mixture vol =" + ccmVol.toFixed(2);
+        document.getElementById("CCMWetVolOutput") .innerHTML = "Cement concrete mixture Wet vol =" + wetCCMVol.toFixed(2);document.getElementById("CCMCementOutput") .innerHTML = "Cement Quantity =" + cement.toFixed(2);
+        document.getElementById("CCMNoOfBagsOutput") .innerHTML = "No.of Cement Bags Required =" + CementBags.toFixed(2);
+        document.getElementById("sandOutput") .innerHTML = "Volume of Sand Required (in Tonn) =" + sandTon.toFixed(2);
+        document.getElementById("aggOutput") .innerHTML = "Volume of Aggeregate Required (in Tonn) =" + aggTon.toFixed(2);
+    } 
     else{
         ratio = 13;
         // amount of cement
@@ -109,7 +121,11 @@ function ccm(){
         const aggTon = (agg*1350)/1000;
 
         //output
-        document.getElementById("CCMOutput") .innerHTML = "Cement concrete mixture vol =" +cement.toFixed(2);
+        document.getElementById("CCMVolOutput") .innerHTML = "Cement concrete mixture vol =" + ccmVol.toFixed(2);
+        document.getElementById("CCMWetVolOutput") .innerHTML = "Cement concrete mixture Wet vol =" + wetCCMVol.toFixed(2);document.getElementById("CCMCementOutput") .innerHTML = "Cement Quantity =" + cement.toFixed(2);
+        document.getElementById("CCMNoOfBagsOutput") .innerHTML = "No.of Cement Bags Required =" + CementBags.toFixed(2);
+        document.getElementById("sandOutput") .innerHTML = "Volume of Sand Required (in Tonn) =" + sandTon.toFixed(2);
+        document.getElementById("aggOutput") .innerHTML = "Volume of Aggeregate Required (in Tonn) =" + aggTon.toFixed(2);
     }
 }
     

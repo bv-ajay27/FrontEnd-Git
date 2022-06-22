@@ -104,7 +104,7 @@ h2{
 .ccm{
     /* display: none; */
     position: relative;
-    background-image: url(images/steelCal.JPG);
+    /* background-image: url(images/steelCal.JPG); */
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -117,4 +117,10 @@ h2{
     background-size: contain;
     background-repeat: no-repeat;
     background-clip: border-box;
+}
+span{
+    background-color: #0b99eb;
+    color: white;
+    font-size: larger;
+    font-weight: 400;
 }
