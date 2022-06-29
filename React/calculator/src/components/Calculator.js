@@ -10,7 +10,6 @@ function Calculator() {
     const [result,setResult] = useState(0);
   return (
     <>
-      <h2>Calculator</h2>
       {/* <input type="text" value ={result === 0 ? input : result} name="input" onChange={inputHandler}/> */}
       <div className='container'>
         <div className='display'>
