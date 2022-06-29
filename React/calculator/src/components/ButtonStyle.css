@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+.display{
+    border: 2px solid blue;
+    width: 200px;
+    height: 60px;
+    font-size: x-large;
+    position: relative;
+}
+.display input{
+    height: 32px;
+    width: 190px;
+    font-size: x-large;
+    border: none;
+    overflow: hidden;
+}
+.display .res{
+    position: absolute;
+    bottom: 1px;
+    right: 3px;
+    color: green;
+}
+.btn{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: flex-start;
+}
+button{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.special{
+    background-color: rgb(36, 36, 124);
+}
+button:hover{
+    background-color: black;
+}

@@ -64,3 +64,8 @@ function ajay(){
  }
 //  document.write(navigator.platform);
 document.write(screen.colorDepth);
+
+// Arrow function
+const ele = () =>(
+    windows.write("hello")
+)

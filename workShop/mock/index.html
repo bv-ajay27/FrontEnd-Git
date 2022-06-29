@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div >
+        <div class="container">
+            <div class="height">
+                <label for="Height">Height</label>
+                <input type="range" name="" id="Height" max="500" min="10">
+            </div>
+            <div class="width">
+                <label for="width">Width</label>
+                <input type="range" name="width" id="Width" max="200" min="10">
+            </div>
+            <div class="backGround">
+                <ul>
+                    <label for="red">red</label>
+                    <input type="radio" name="red" id="red">
+                    <br>
+                    <label for="blue">blue</label>
+                    <input type="radio" name="red" id="blue">
+                    <br>
+                    <label for="green">green</label>
+                    <input type="radio" name="green" id="green">
+                    <br>
+                    <label for="pink">pink</label>
+                    <input type="radio" name="pink" id="pink">
+                    <br>
+                    <label for="purple">purple</label>
+                    <input type="radio" name="purple" id="purple">
+                </ul>
+            </div>
+            <h2>Height of the Box : <span id="height"></span></h2>
+            <h2>Width of the Box : <span id="width"></span></h2>
+
+            <div id="box"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
