@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="icon.png" />
+<meta name="apple-mobile-web-app-title" content="AARYANX">
+
+<link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+  <title>Circle Music Visualizer</title>
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+
+<script src='https://unpkg.com/aframe-fractal-component@1.0.4/dist/aframe-fractal-component.min.js'></script>
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'>
+  
+<style>
+.songtitle {
+  position: fixed;
+  top: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding-left: 30px;
+  color: white;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <!-- 
+Library is up on github at https://github.com/Tino-F/aframe-fractal-component 
+
+Follow @TesseraWorks on instagram and twitter to stay updated with more cool technology!
+Or visit our website at https://tessera.works/
+-->
+
+<a-scene>
+
+  <a-sound id='audio' position='0 0 -10' autoplay='true'></a-sound>
+  <a-entity
+        position='0 0 -400'
+        fractal='x: ( Math.cos(t * 0.01) * 2000 ) + Math.random() * 100; y: ( Math.sin(t * 0.01) * 2000 ) + Math.random() * 100; z: Math.random()*100; audioSource: #audio; colors: #4286f4, #cbff00, #b800c9, #00c9a4, #ff002e, #3aff00; scale: 0.1; fftSize: 512; pointSize: 4; points: 630;'>
+
+        <a-animation attribute="rotation"
+           dur="100000"
+           easing='linear'
+           from='0 0 0'
+           to="0 360 360"
+           repeat="indefinite">
+        </a-animation>
+
+        </a-entity>
+  
+
+  <a-sky color='#000000'></a-sky>
+
+</a-scene>
+
+<h1 class='songtitle'>Drag a song into the scene to play it!</h1>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'></script>
+      <script id="rendered-js" >
+window.onload = function () {
+  var canvas = document.querySelector('.a-canvas');
+
+  canvas.addEventListener('dragover', function (e) {
+    e.preventDefault();
+  });
+
+  canvas.addEventListener('drop', function (e) {
+
+    console.log('File(s) dropped');
+
+    // Prevent default behavior (Prevent file from being opened)
+    e.preventDefault();
+
+    if (e.dataTransfer.items) {
+
+      if (e.dataTransfer.items[0].kind === 'file') {
+        var file = e.dataTransfer.items[0].getAsFile();
+        var blobURL = window.URL.createObjectURL(file);
+        document.getElementById('audio').setAttribute('src', blobURL);
+        document.querySelector('.songtitle').innerHTML = file.name;
+      }
+
+    }
+
+  });
+
+};
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
