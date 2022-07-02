@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    color:white;
+}
+.container{
+    background-image: url(./ttd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.navBar{
+    background-color: darkgreen;
+    color: aliceblue;
+}
+.brand{
+    text-align: left;
+    padding: 5px;
+    font-size: 25px;
+}
+.navBar .auth-btn{
+   text-align: right;
+   padding: 10px;
+}
+button{
+    border: white;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: white;
+    color: green;
+}
+.search{
+    /* display: flex; */
+    margin-top: 30vh;
+    text-align: center;
+    justify-content: center;
+}
+.searchBar input{
+    text-align: left;
+    width: 50%;
+    height: 40px;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    font-weight: 400;
+    border-radius: 5px;
+}
