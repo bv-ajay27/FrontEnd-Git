@@ -9,18 +9,22 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
-.navBar{
-    background-color: darkgreen;
-    color: aliceblue;
+ul {
+    list-style-type: none;
+    padding: 5px;
+    overflow: hidden;
+    background-color: green;
+}
+li {
+    float: left;
 }
 .brand{
-    text-align: left;
-    padding: 5px;
-    font-size: 25px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 7px;
 }
-.navBar .auth-btn{
-   text-align: right;
-   padding: 10px;
+sub{
+    font-size: 10px;
 }
 button{
     border: white;
@@ -36,7 +40,6 @@ button:hover{
     color: green;
 }
 .search{
-    /* display: flex; */
     margin-top: 30vh;
     text-align: center;
     justify-content: center;
@@ -48,6 +51,6 @@ button:hover{
     font-size: 15px;
     color: black;
     background-color: white;
-    font-weight: 400;
+    font-weight: 700;
     border-radius: 5px;
 }
