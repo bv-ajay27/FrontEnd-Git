@@ -1,4 +1,4 @@
-package javaProjectCouponCode;
+package CouponCode_JAVA-Project;
 import java.util.*;
 
 

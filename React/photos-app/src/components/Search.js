@@ -1,8 +1,15 @@
 import React from 'react'
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 const Search = () => {
   return (
-    <div>Search</div>
+    <>
+      <BrowserRouter>
+          <Routes>
+            <Route path="Search" element={<Search/>}/>
+          </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 

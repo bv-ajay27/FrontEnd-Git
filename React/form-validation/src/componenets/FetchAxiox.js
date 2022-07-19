@@ -10,7 +10,7 @@ const FetchAxiox = () =>{
     },[])
     return(
         <>
-            <h2>Fetching API through AXIOS</h2>
+            <h2>Fetching API through AXIOS by using map function</h2>
             {input.map(item => <p key={item.id}>{item.name}</p>)}
         </>
     )
