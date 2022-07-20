@@ -71,6 +71,7 @@ function nextQuestion(){
     d_text.innerText = currentQuesData.d
 }
 
+//function
 nextQuestion()
 
 let score = 0;
@@ -101,6 +102,7 @@ submitBtn.addEventListener("click",()=>{
         currQuesInd++;
         if(currQuesInd < quizData.length)
         {
+            // function call
             nextQuestion()
         }
         else{

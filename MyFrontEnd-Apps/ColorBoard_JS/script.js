@@ -14,6 +14,7 @@ for(let i=0;i<SQUARES;i++){
 
 function setColor(element){
     const color = randomColor()
+    // const color1 = randomColor1()
 
     element.style.background = color
     element.style.boxShadow=`0 0 2px ${color}, 0 0 10px ${color}`
@@ -29,7 +30,9 @@ function getRandomInteger(min,max){
     return Math.floor(Math.random()*(max-min+1)) +min;
 }
 
-
+// function randomColor1(){
+//     return `rgb(${getRandomInteger(0,200)},${getRandomInteger(0,180)},${getRandomInteger(0,255)})`
+// }
 function randomColor(){
     return `rgb(${getRandomInteger(0,255)},${getRandomInteger(0,255)},${getRandomInteger(0,255)})`
 }

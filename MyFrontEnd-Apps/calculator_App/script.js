@@ -24,6 +24,6 @@ function buttonClick(btn){
 
 const button = document.querySelectorAll(".btn")
 
-button.forEach(btn=>{
+button.forEach(btn => {
     buttonClick(btn)
 });
