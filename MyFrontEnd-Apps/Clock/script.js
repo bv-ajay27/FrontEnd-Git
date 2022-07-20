@@ -18,8 +18,6 @@ function time(){
     const hour = time.getHours();
     const hourDeg = ((hour / 12) * 360) + ((min/60)*30) + 270;
     hourHand.style.transform = `rotate(${hourDeg}deg)`;
-
-    console.log(sec,min,hour);
 }
 setInterval(time,1000);
 
