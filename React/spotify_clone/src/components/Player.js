@@ -2,7 +2,9 @@ import React from 'react'
 
 function Player() {
   return (
-    <div>Player</div>
+    <div>
+      <h1>Welcome to Spotify</h1>
+    </div>
   )
 }
 
