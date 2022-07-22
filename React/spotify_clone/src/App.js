@@ -32,22 +32,20 @@ function App() {
           type: 'SET_USER',
           user: user,
         })  
-        console.log('a', user);
-        console.log("alien",token );
+        // console.log('a', user);
+        // console.log("alien",_token);
       });
     }
-    console.log("i have a token", token);
+    // console.log("i have a token", token);
   },[])
   return (
     <div className="app">
       {
-        token ? (
-          <Player/>
-        ) :(
+        token ? 
+          <Player spotify = {spotify}/>
+        :
           <Login />
-        )
-      }
-      
+      } 
     </div>
   );
 }
