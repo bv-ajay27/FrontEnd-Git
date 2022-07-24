@@ -20,23 +20,24 @@ body{
 }
 .wrapper{
   width: 400px;
-  background: #fff;
+  background: whitesmoke;
   border-radius: 7px;
   box-shadow: 7px 7px 10px 12px rgba(0, 0, 0, 0.05);
 }
 .wrapper header{
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 21px;
   font-weight: 500;
-  color: #43AFFC;
+  color: #27a0f7;
   padding: 16px 15px;
-  /* align-items: center; */
   border-bottom: 1px solid #ccc;
 }
 header i{
   font-size: 0em;
   cursor: pointer;
-  margin-right: 80px;
+  margin-right: 10px;
 }
 .wrapper.active header i{
   margin-left: 5px;
