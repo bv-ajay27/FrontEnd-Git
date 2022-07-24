@@ -3,12 +3,11 @@ export const initialState = {
     playerlists:[],
     playing:false,
     item:null,
-    // remove after finished developing
-    // token:'BQDVDNvGrF86-I9G0aWKiiRy_2QeKdxT9KpM9jsZEC3tEN3C-NXDIPERNFiq9YFvvpblLGisTIMX97RY_9f_cke60bUR7rIeMzI40yIitnMPtVI2DSZDrAVKDj07-eFYQ944_Y_aIpf6fFuAq7LZVfjlgOuRguowGZ53ZuY8ko1nZLcTWzhP87GsywnFOeFFqB4qCwR7a_bo-H6M',
+    // token:'BQCRFrq87zkYh_rkP2cy6ERt5fzkC1PtA7DbgDbLkgd7Exifr4BEnRR2115F9na8MKWwmYt89p4ZSmzwHulqvj43LkB0qMvVXnlQiyzDHjYrvd4ER92VvidUhMzUvTzcJE23idqu0Z_um2VlmLekJnPVgkgyLfLlyow4AqE8IT2uuZWRlAy_Owv0DUhl3n9sB5vIDNeyDivu98d_',
 };
  
 const reducer = (state, action) =>{
-    console.log(action);
+    // console.log(action);
 
     switch(action.type){
         case 'SET_USER':
@@ -25,6 +24,11 @@ const reducer = (state, action) =>{
             return{
                 ...state,
                 playerlists: action.playerlists,
+            };
+        case 'SET_DISCOVER_WEEKLY':
+            return{
+                ...state,
+                discover_weekly: action.discover_weekly,
             };
         default:
             return state;
