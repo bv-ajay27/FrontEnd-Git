@@ -1,0 +1,10 @@
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboard_col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

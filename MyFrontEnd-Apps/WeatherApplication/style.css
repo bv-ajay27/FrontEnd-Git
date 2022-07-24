@@ -11,7 +11,8 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #43AFFC;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+  background-color: rgb(91, 87, 115);
 }
 ::selection{
   color: #fff;
