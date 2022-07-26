@@ -7,7 +7,7 @@ function Calculator() {
     const inputHandler = i =>{
         setInput(i.target.value)
     }
-    const [result,setResult] = useState(0);
+    const [result,setResult] = useState('');
   return (
     <>
       {/* <input type="text" value ={result === 0 ? input : result} name="input" onChange={inputHandler}/> */}
