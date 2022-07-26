@@ -42,7 +42,9 @@ function onError(error){
 function fetchData(){
     infoTxt.innerText = "Getting weather details...";
     infoTxt.classList.add("pending");
-    fetch(api).then(res => res.json()).then(result => weatherDetails(result)).catch(() =>{
+    fetch(api).then(res => res.json())
+    .then(result => weatherDetails(result))
+    .catch(() =>{
         infoTxt.innerText = "Something went wrong";
         infoTxt.classList.replace("pending", "error");
     });
@@ -53,12 +55,13 @@ function weatherDetails(info){
         infoTxt.classList.replace("pending", "error");
         infoTxt.innerText = `${inputField.value} isn't a valid city name`;
     }else{
+        // console.log(info)
         const city = info.name;
         const country = info.sys.country;
         // const time = info.time;
         const {description, id} = info.weather[0];
         const {temp, feels_like, humidity} = info.main;
-
+        // console.log(id)
         if(id == 800){
             wIcon.src = "weather/day.svg"; // day
         }else if(id >= 200 && id <= 232){

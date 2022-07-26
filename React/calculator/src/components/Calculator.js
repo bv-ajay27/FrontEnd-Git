@@ -21,7 +21,10 @@ function Calculator() {
           </div>
         </div>
         <div className='btn'>
-          <button className='special' onClick={() => setInput('')}>CLR</button>
+          <button className='special' onClick={() => {
+            setInput('');
+            setResult(" ");}
+          }>CLR</button>
           <button onClick={() => setInput(input+'/')}>/</button>
           <button onClick={() => setInput(input+'*')}>*</button>
           <button onClick={() => setInput(input+'(')}>(</button>
@@ -43,7 +46,7 @@ function Calculator() {
           <button onClick={() => setInput(input+'0')}>0</button>
           <button onClick={() => setInput(input+'.')}>.</button>
           <button onClick={() => setInput(input+'00')}>00</button>
-          <button className='special' onClick={() => setInput(setResult(eval(input)))}>=</button>
+          <button className='special' onClick={() => setResult(eval(input))}>=</button>
         </div>
       </div>  
     </>
