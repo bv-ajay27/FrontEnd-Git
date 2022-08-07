@@ -25,7 +25,7 @@ class SubChildComp1 extends Component{
         this.increment()
         this.increment()
     }
-    decrementBy9 = ()=>{
+    decrementBy9 = () =>{
         this.decrement();
         this.decrement();
         this.decrement();

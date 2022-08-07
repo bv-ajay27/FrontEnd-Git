@@ -1,23 +1,23 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export class BulbOnOff extends Component {
-	constructor(props) {
-		super(props)
+  constructor(props) {
+    super(props);
 
-		this.state = {
-			bulbStatus: false
-		}
-	}
+    this.state = {
+      bulbStatus: false,
+    };
+  }
 
-	toggleBulb = () => {
-		this.setState((prevState) => ({
-			bulbStatus: !prevState.bulbStatus
-		}))
-	}
+  toggleBulb = () => {
+    this.setState((prevState) => ({
+      bulbStatus: !prevState.bulbStatus,
+    }));
+  };
 
-	render() {
-		let { bulbStatus } = this.state
-		return (
+  render() {
+    let { bulbStatus } = this.state;
+    return (
       <>
         <img
           src={
@@ -31,13 +31,17 @@ export class BulbOnOff extends Component {
         />
         <button
           onClick={this.toggleBulb}
-          style={{ padding: "10px 20px", margin: "20px auto", display: 'block' }}
+          style={{
+            padding: "10px 20px",
+            margin: "20px auto",
+            display: "block",
+          }}
         >
           Toggle Bulb
         </button>
       </>
     );
-	}
+  }
 }
 
-export default BulbOnOff 
+export default BulbOnOff;

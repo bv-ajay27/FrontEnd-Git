@@ -16,6 +16,8 @@ const ChildComp1 = () =>{
             <SubChildComp1 title="GrandChild-1" color = "red"/>
             <SubChildComp1 title="GrandChild-2" color="black" backgroundColor = "orange" />
             <SubChildComp1 title="GrandChild-3"/>
+            <SubChildComp1 title="GrandChild-5"/>
+            <SubChildComp1 title="GrandChild-4" color="black" backgroundColor = "orange" />
         </div>
     )
 }
