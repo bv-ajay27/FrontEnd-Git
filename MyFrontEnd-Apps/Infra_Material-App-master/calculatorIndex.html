@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculatorStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Quantity_Estimator</title>
+</head>
+<body>
+    <div class="header">
+        <!-- <a href="#">Construct</a> -->
+        <p>Quantity Estimator <sub>by Construct...</sub></p>
+    </div>
+    <div class="container">
+        <ul class="navBar">
+            <p class="construct-app">
+                <a href="index.html"><i class="far fa-building"> Construct</i>
+                </a>
+            </p>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#CCM">Concrete Calculator</a></li>
+            <li><a href="#soil">Top soil Calculator</a></li>
+            <li><a href="#Bricks">Bricks Quantity</a></li>
+            <li><a href="#Steel">Steel Calculator</a></li>
+        </ul>
+        <hr>
+        <hr>
+        <div class="content">
+            <h2 id="Home">Home</h2>
+            <div id="Home-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id enim nemo minima velit eius. Pariatur eos aliquid ab. Nisi fuga vitae recusandae a rerum adipisci corrupti dignissimos laudantium ipsa delectus consequatur maiores neque repudiandae voluptate aperiam molestias quam laboriosam minima deserunt quos alias eligendi, modi quia odit? Dolorem officiis rem dolore molestiae magnam harum esse, vero autem. Delectus voluptates dolore quod accusantium, provident quos minima ipsam totam qui, eaque similique ducimus ut nulla saepe? Repellendus unde illo quod nostrum quidem maxime ipsum iste est esse quos sit vero quasi laboriosam enim aliquam cupiditate suscipit, explicabo laborum? Maxime magni obcaecati dolores.
+            </div>
+            <h2  id="CCM">Concrete Calculator</h2>
+            <br>
+            <div class="ccm">
+                <h3>CEMENT CONCRETE CALCULATION</h3>
+                <br>
+                <label for="unit">Unit of measurement :</label>
+                <br>
+                <!-- <input type="text" name="" id="unit"> -->
+                <select name="measurement" id="unitMeasureCCM">
+                    <option value="Meter/Cm">Meter/Cm</option>
+                </select>
+                <br>
+                <label for="CCGrade">Grade of Cement Mixture</label>
+                <br>
+                <!-- grade of cement mixture -->
+                <select name="CCGrade" id="CCGrade">
+                    <option value="M-20">M-20(1:1.5:3)</option>
+                    <option value="M-15">M-15(1:2:4)</option>
+                    <option value="M-10">M-10(1:3:6)</option>
+                    <option value="M-7.5">M-7.5(1:4:8)</option>
+                </select>
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="Length">Length</label>
+                <br>
+                <input type="number" name="" id="LengthCCM" placeholder="Length" >
+                <input type="number" name="" id="LengthCCMDec" placeholder="Decimal Length" value="0.0">
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="width">Width :</label>
+                <br>
+                <input type="number" name="" id="WidthCCM" placeholder="Width">
+                <input type="number" name="" id="WidthCCMDec" placeholder="Decimal Width" value="0.0">
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="Depth">Depth</label>
+                <br>
+                <input type="number" name="" id="DepthCCM" placeholder="Width">
+                <input type="number" name="" id="DepthCCMDec" placeholder="Decimal Depth" value="0.0">
+                <br>
+                <br>
+                <button onclick="ccm()">Calculate</button><br><br>
+                <span id="CCMVolOutput"></span><br>
+                <span id="CCMWetVolOutput"></span><br>
+                <span id="CCMCementOutput"></span><br>
+                <span id="CCMNoOfBagsOutput"></span><br>
+                <span id="sandOutput"></span><br>
+                <span id="aggOutput"></span>
+            </div>
+            <br>
+
+            <!-- Top Soil Calculator -->
+            <h2 id="soil">Top Soil Calculator</h2>
+            <br>
+            <div class="soilCal">
+                <h3>SOIL QUANTITY-ESTIMATOR</h3>
+                <br>
+                <label for="unit">Unit of measurement :</label>
+                <br>
+                <select name="measurement" id="unitMeasure">
+                    <option value="Meter/Cm">Meter/Cm</option>
+                </select>
+                <br>
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="Length">Length</label>
+                <br>
+                <input type="number" name="" id="LengthSoil" placeholder="Length" required="number">
+                <br>
+                <!-- Measuremnet input Width -->
+                <label for="width">Width :</label>
+                <br>
+                <input type="number" name="" id="WidthSoil" placeholder="Width">
+                <br>
+                <!-- Measuremnet input Depth -->
+                <label for="Depth">Depth</label>
+                <br>
+                <input type="number" name="" id="DepthSoil" placeholder="Width">
+                <br>
+                <br>
+                <button onclick="soilCal()">Calculate</button><br><br>
+                <span id="TopSoilOutput"></span>
+            </div>
+            
+            <!-- Bricks Quantity -->
+            <h2 id="Bricks">Bricks Quantity</h2>
+            <br>
+            <div >
+                <h3>BRICKS QUANTITY-ESTIMATOR</h3>
+                <br>
+                <label for="unit">Unit of measurement :</label>
+                <br>
+                <select name="measurement" id="unitMeasure">
+                    <option value="Meter/Cm">Meter/Cm</option>
+                </select>
+                <br>
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="Length">Length</label>
+                <br>
+                <input type="number" name="" id="wallLength" placeholder="Length">
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="width">Height/Depth :</label>
+                <br>
+                <input type="number" name="" id="wallHeight" placeholder="Width">
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="Depth">Wall Thickness</label>
+                <br>
+                <input type="number" name="" id="Thickness" placeholder="Wall Thickness">
+                <br>
+                <br>
+                <h4>Size of Brick</h4>
+                <p>unitMeasure 'cm'</p>
+                <!-- size of brick -->
+                <label for="Length">Length</label>
+                <br>
+                <input type="number" name="" id="brickLength" placeholder="Length of Brick">
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="width">Height :</label>
+                <br>
+                <input type="number" name="" id="bricksHeight" placeholder="Width">
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="Depth">Width :</label>
+                <br>
+                <input type="number" name="" id="brickThickness" placeholder="Wall Thickness">
+                <br>
+                <br>
+                <button onclick="BricksQTY()">Calculate</button><br><br>
+                <span id="BricksOutput"></span>
+            </div>
+
+            <!-- steel Calculator -->
+
+            <h2 id="Steel">Steel Calculator</h2>
+            <br>
+            <div class="steelCal">
+                <br>
+                <h3>STEEL QUANTITY-ESTIMATOR</h3>
+                <br>
+                <label for="unit">Unit of measurement :</label>
+                <br>
+                <!-- <input type="text" name="" id="unit"> -->
+                <select name="measurement" id="unitMeasureOfSteel">
+                    <option value="Meter/Cm">Meter/Cm</option>
+                </select>
+                <br>
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="dia">Diameter :</label>
+                <br>
+                <input type="number" name="" id="Dia" placeholder="Diameter in mm" required="number">
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="length">Length :</label>
+                <br>
+                <input type="number" name="" id="LengthSteelRod" placeholder="Length">
+                <br>
+                <!-- Measuremnet input length -->
+                <label for="qty">Quantity :</label>
+                <br>
+                <input type="number" name="" id="steelQty" placeholder="No.of Rods">
+                <br>
+                <br>
+                <!-- <img src="images/steelCal.JPG" alt="steelCalculator-Img" class="steelCalImg"> -->
+                <button onclick="SteelQTY()">Calculate</button><br><br>
+                <span id="steelQTYOutput"></span>
+            </div>
+        </div>
+          
+    </div>
+
+    <script src="calculatorScript.js"></script>
+</body>
+</html>
