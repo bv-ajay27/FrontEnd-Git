@@ -147,7 +147,7 @@ h2.zero:before{
 
 .nav-bar .login-form.active{
     right:2rem;
-    transition: .4s linear;
+    transition: 0.4s linear;
 }
 
 .nav-bar .login-form h3{
@@ -199,7 +199,7 @@ h2.zero:before{
 
 .nav-bar .shopping-cart div{
     display: flex;
-    padding:1rem;
+    padding: 1rem;
     position: relative;
 }
 
