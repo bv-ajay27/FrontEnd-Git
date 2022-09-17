@@ -84,7 +84,6 @@ public class mainPage {
                     break;
                 case 9:
                     break;
-                    
                 }
             }while(k!=9);
     }

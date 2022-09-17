@@ -4,13 +4,13 @@ import java.util.Base64.Decoder;
 import java.util.Base64.Encoder;
 
 public class USER {
-    private int userId;
-		private static String userPassword;
-		
-		USER(int id, String password){
-			userId = id;
-			userPassword = password;
-		}
+	private int userId;
+	private static String userPassword;
+	
+	USER(int id, String password){
+		userId = id;
+		userPassword = password;
+	}
 		
 		public static void addUSER(int id, String password) {
 			// TODO Auto-generated method stub

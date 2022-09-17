@@ -13,8 +13,8 @@ public class Store {
 		System.out.println("3.EXIT");
 		int k = sc.nextInt();
 		do {
-		switch(k) 
-        {
+			switch(k) 
+			{
             case 1:
                 storeFun();
                 System.out.println("1.SAVE NEW CREDINALS");
