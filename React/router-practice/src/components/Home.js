@@ -17,9 +17,11 @@ const Home = () => {
       </div>
       <div>
           <nav>
-              <Link to="/"><li>Home</li></Link>
+              {/* <Link to="/"><li>Home</li></Link> */}
               <Link to="/About"><li>About</li></Link>
               <Link to="/ContactUs"><li>ContactUs</li></Link>
+              <Link to="/OurMeetUps"><li>Our MeetUps</li></Link>
+              <Link to="/Register"><li>Register</li></Link>
           </nav>
       </div>
     </div>
